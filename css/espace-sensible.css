@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.rotated-text {
+  transform: rotate(80deg);
+  position: relative;
+}
