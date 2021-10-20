@@ -4,3 +4,30 @@
   transform: rotate(80deg);
   position: relative;
 }
+
+.box-anim-image {
+  display: inline-block;
+}
+
+.non-anim-image {
+  z-index: 1;
+}
+
+.box-anim-image .anim-image {
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.box-anim-image:hover .amim-image {
+  display: inline;
+}
+
+.appear-image {
+  display: inline;
+}
+
+.appear-image:hover {
+  display: none;
+}
