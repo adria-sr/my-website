@@ -6,28 +6,22 @@
 }
 
 .box-anim-image {
-  display: inline-block;
+  position: relative;
+  margin-bottom: 100vh;
 }
 
-.non-anim-image {
-  z-index: 1;
-}
-
-.box-anim-image .anim-image {
-  display: none;
+.box-anim-image img {
+  width: 600px;
+  height: 600px;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;
 }
 
-.box-anim-image:hover .amim-image {
-  display: inline;
-}
-
-.appear-image {
-  display: inline;
-}
-
-.appear-image:hover {
+.box-anim-image .img-hover {
   display: none;
+}
+
+.box-anim-image:hover .img-hover {
+  display: block;
 }
