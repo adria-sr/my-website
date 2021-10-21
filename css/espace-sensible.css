@@ -36,3 +36,20 @@
 .inline-photo.is-visible {
   opacity: 1;
 }
+
+@keyframes swush {
+  from {
+    transform: translate(100%, 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.swush {
+  animation-name: swush;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: 5;
+}
