@@ -75,10 +75,21 @@ a {
   decoration: none;
 }
 
-.icon {
+.menu-icon {
   /*insert little animation*/
 }
 
-.icon:hover {
+.menu-icon:hover {
   /*insert effet d'aggrandissement whent hovered*/
+}
+
+/* marquee effect zone */
+/* Parent container of a .marquee3k element */
+.diagonal-marquee {
+  transform: rotate(45deg);
+}
+
+.marquee3k__copy {
+  padding-right: 30px;
+  box-sizing: border-box;
 }
