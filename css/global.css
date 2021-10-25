@@ -77,7 +77,12 @@ em, .tonique {
 }
 
 a {
-  decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--tonique);
 }
 
 .menu-icon {
