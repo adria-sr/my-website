@@ -52,15 +52,15 @@
 }
 
 p, h1, h2, h3, h4, h5, h6, a, .avara {
-  font-family: "Avara_Bold", sans-serif;
+  font-family: "Avara_Bold", Georgia, serif;
 }
 
 i, .avara-italic {
-  font-family: "Avara_Bold Italic", sans-serif;
+  font-family: "Avara_Bold Italic", Georgia, serif;
 }
 
 b, .avara-black {
-  font-family: "Avara_Black", sans-serif;
+  font-family: "Avara_Black", Georgia, serif;
 }
 
 .jost {
@@ -74,6 +74,10 @@ em, .tonique {
 .huge {
   color: var(--tonique);
   font-size: 25vw;
+}
+
+.huge:hover {
+  color: #FFFFFFFF;
 }
 
 a {
@@ -227,3 +231,21 @@ a:hover {
 }
 
 /* end of marquee effect zone*/
+.thumbnail {
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 60vh;
+  height: 60vh;
+  cursor: pointer;
+  transition: background-size 0.5s;
+}
+
+.thumbnail:hover {
+  background-clip: border-box;
+  background-size: auto 65vh;
+  color: var(--tonique);
+  /* Safari 6.0 - 9.0
+  -webkit-filter: blur(5px);
+  filter: blur(5px);*/
+}
