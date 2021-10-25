@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Avara_Bold';
+  src: url('font/avara/Bold/Avara-Bold_web.eot');
+  src: url('font/avara/Bold/Avara-Bold_web.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/Bold/Avara-Bold_web.woff') format('woff'),
+    url('font/avara/Bold/Avara-Bold_web.woff2') format('woff2'),
+    url('font/avara/Bold/Avara-Bold_web.ttf') format('truetype'),
+    url('font/avara/Bold/Avara-Bold_web.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avara_Bold Italic';
+  src: url('font/avara/BoldItalic/Avara-Bold_Italic_web.eot');
+  src: url('font/avara/BoldItalic/Avara-Bold_Italic_web.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/BoldItalic/Avara-Bold_Italic_web.woff') format('woff'),
+    url('font/avara/BoldItalic/Avara-Bold_Italic_web.woff2') format('woff2'),
+    url('font/avara/BoldItalic/Avara-Bold_Italic_web.ttf') format('truetype'),
+    url('font/avara/BoldItalic/Avara-Bold_Italic_web.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avara_Black';
+  src: url('font/avara/Black/Avara-Black_web.eot');
+  src: url('font/avara/Black/Avara-Black_web.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/Black/Avara-Black_web.woff') format('woff'),
+    url('font/avara/Black/Avara-Black_web.woff2') format('woff2'),
+    url('font/avara/Black/Avara-Black_web.ttf') format('truetype'),
+    url('font/avara/Black/Avara-Black_web.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Jost', sans-serif;
+}
