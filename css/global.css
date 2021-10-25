@@ -85,6 +85,11 @@ a {
 
 /* marquee effect zone */
 /* Parent container of a .marquee3k element */
+.marquee3k {
+  overflow: hidden;
+  margin-top: 3em;
+}
+
 .diagonal-marquee {
   transform: rotate(45deg);
 }
@@ -93,3 +98,5 @@ a {
   padding-right: 30px;
   box-sizing: border-box;
 }
+
+/* end of marquee effect zone*/

@@ -197,6 +197,7 @@
     }
   }
 
+  Marquee3k.init();
   return Marquee3k;
 
 }));
