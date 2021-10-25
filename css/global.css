@@ -67,8 +67,13 @@ b, .avara-black {
   font-family: Jost, monospace;
 }
 
-.tonique {
+em, .tonique {
   color: var(--tonique)
+}
+
+.huge {
+  color: var(--tonique);
+  font-size: 25vw;
 }
 
 a {
