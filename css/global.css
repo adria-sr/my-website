@@ -5,7 +5,9 @@
  * Tout droits réservés
  * 2021
  */
-:root {}
+:root {
+  --tonique: #ffe400;
+}
 
 @font-face {
   font-family: 'Avara_Bold';
@@ -49,15 +51,15 @@
   font-family: 'Jost', sans-serif;
 }
 
-.avara {
+p, h1, h2, h3, h4, h5, h6, a, .avara {
   font-family: "Avara_Bold", sans-serif;
 }
 
-.avara-italic {
+i, .avara-italic {
   font-family: "Avara_Bold Italic", sans-serif;
 }
 
-.avara-black {
+b, .avara-black {
   font-family: "Avara_Black", sans-serif;
 }
 
@@ -66,5 +68,9 @@
 }
 
 .tonique {
-  text-decoration-color:
+  color: var(--tonique)
+}
+
+a {
+  decoration: none;
 }
