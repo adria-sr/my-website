@@ -25,6 +25,8 @@
 
 
   <!-- JS -->
+  <script src="js/global.js"></script>
+
 
 </head>
 
@@ -45,7 +47,41 @@
             <h3> <i>découvrez mon travail</i> </h3>
           </div>
         </div>
-        <img class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
+
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+          <!-- Button to close the overlay navigation -->
+          <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <div class="row g-0">
+              <div class="col-2">
+              </div>
+              <div class="col-auto">
+                <div class="m-2">
+                  <h1 class="menu"><a href="apropos.html"><i>A propos</i></a></h1>
+                  <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
+                </div>
+                <div class="m-2">
+                  <h5><a href="mentions-legales.html"><i>Mentions légales</i></a></h5>
+                  <h5><a href="archive.html"><i>Archives</i></a></h5>
+                </div>
+                <div class="m-4" style="position: fixed; bottom: 0px;">
+                  <p class="jost">Adrià SOUBIAS RABASSA</p>
+                  <p class="jost">v2.0.0</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
       </div>
     </header>
 
@@ -84,35 +120,34 @@
         <div class="col-sm-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-micro.jpg);">
           <a href="projet-mafonte.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black">Ma Fonte</h4>
           </a>
         </div>
 
         <div class="col-sm-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-bike.jpg);">
           <a href="projet-bike-pictures.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black">Bike photography</h4>
           </a>
         </div>
 
-        <div class="col-sm-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-muriers.png);">
+        <div class="col-sm-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-muriers.jpg);">
           <a href="projet-lesmuriers.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
           </a>
         </div>
 
         <div class="col-sm-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-music.jpg);">
           <a href="projet-pakistani.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black"></h4>
           </a>
         </div>
 
         <div class="col-sm-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-stenopes.jpg);">
           <a href="projet-stenope.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black">Sténopés</h4>
           </a>
         </div>
 
@@ -126,21 +161,21 @@
         <div class="col-sm-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-rouille.jpg);">
           <a href="projet-rouille.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black">Impressions de rouille</h4>
           </a>
         </div>
 
         <div class="col-sm-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-bvm.jpg);">
           <a href="projet-barometre.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black">Flyer Baromètre des villes marchables</h4>
           </a>
         </div>
 
         <div class="col-sm-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-gravure.jpg);">
           <a href="projet-gravure.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="avara-black">Gravure</h4>
           </a>
         </div>
 
