@@ -45,13 +45,6 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
-
-@font-face {
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-}
-
 p, h1, h2, h3, h4, h5, h6, a, .avara {
   font-family: "Avara_Bold", Georgia, serif;
 }
@@ -65,7 +58,12 @@ b, .avara-black {
 }
 
 .jost {
-  font-family: "Jost", monospace;
+  font-family: 'Jost', monospace;
+  font-weight: 300;
+}
+
+b .jost {
+  font-weight: 700;
 }
 
 em, .tonique {
