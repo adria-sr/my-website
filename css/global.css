@@ -74,8 +74,6 @@ svg {
   fill: var(--bs-white);
   max-width: 45vw;
   min-width: 24vw;
-  width: auto;
-  height: auto;
   transition: 0.2s;
   margin: 0.5vw;
 }
