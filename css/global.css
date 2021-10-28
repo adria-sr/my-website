@@ -45,6 +45,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Redaction_Regular';
+  src: url('../font/redaction/normal/Redaction-Regular.otf') format('opentype'),
+    url('../font/redaction/normal/Redaction-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_Italic';
+  src: url('../font/redaction/normal/Redaction-Italic.otf') format('opentype'),
+    url('../font/redaction/normal/Redaction-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_Bold';
+  src: url('../font/redaction/normal/Redaction-Bold.otf') format('opentype'),
+    url('../font/redaction/normal/Redaction-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p, h1, h2, h3, h4, h5, h6, a, .avara {
   font-family: "Avara_Bold", Georgia, serif;
 }
@@ -62,8 +86,13 @@ b, .avara-black {
   font-weight: 300;
 }
 
-b .jost {
+b.jost {
+  font-family: 'Jost', monospace;
   font-weight: 700;
+}
+
+.redaction {
+  font-family: 'Redaction_Regular', serif;
 }
 
 em, .tonique {
