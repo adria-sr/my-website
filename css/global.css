@@ -92,6 +92,10 @@ b.jost {
   font-weight: 700;
 }
 
+.justified {
+  text-align: justify;
+}
+
 .redaction {
   font-family: 'Redaction_Regular', serif;
 }
