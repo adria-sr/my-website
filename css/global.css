@@ -8,6 +8,7 @@
 :root {
   --tonique: #ffe400;
   --micro: #00024c;
+  --pakistani: #35963e;
 }
 
 @font-face {
@@ -110,6 +111,10 @@ b.jost {
 
 em, .tonique {
   color: var(--tonique)
+}
+
+.pakistani {
+  color: var(--pakistani)
 }
 
 svg {
