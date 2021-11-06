@@ -9,6 +9,7 @@
   --tonique: #ffe400;
   --micro: #00024c;
   --pakistani: #35963e;
+  --muriers: #611747;
 }
 
 @font-face {
@@ -110,11 +111,15 @@ b.jost {
 }
 
 em, .tonique {
-  color: var(--tonique)
+  color: var(--tonique);
 }
 
 .pakistani {
-  color: var(--pakistani)
+  color: var(--pakistani);
+}
+
+.muriers {
+  color: var(--muriers);
 }
 
 svg {
