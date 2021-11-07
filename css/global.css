@@ -137,6 +137,7 @@ svg:hover {
 .huge {
   color: var(--tonique);
   font-size: 25vw;
+  cursor: pointer;
 }
 
 .huge:hover {
