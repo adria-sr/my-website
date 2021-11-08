@@ -330,6 +330,19 @@ a:hover {
   filter: blur(5px);*/
 }
 
+.thumbnail-disabled {
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  cursor: not-allowed;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 .link-spanner {
   position: absolute;
   width: 100%;
