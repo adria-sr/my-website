@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
 .rotated-text {
   transform: rotate(80deg);
   position: relative;
 }
+
+.moved-text {}
 
 .box-anim-image {
   position: relative;
