@@ -9,3 +9,6 @@ RewriteRule ^(.*) http://adria-soubias.fr/$1 [QSA,L,R=301]
 ExpiresActive On
 ExpiresDefault A300
 ExpiresByType text/css A3600
+
+
+ErrorDocument 404 /error404.html 

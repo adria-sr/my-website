@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+/*!
+ * <> by Adrià SOUBIAS RABASSA,
+ * Tout droits réservés
+ * 2021
+ */
+:root {
+  --tonique: #ffe400;
+  --micro: #00024c;
+  --pakistani: #35963e;
+  --muriers: #611747;
+}
+
+@font-face {
+  font-family: 'Avara_Bold';
+  src: url('../font/avara/bold/Avara-Bold.eot');
+  src: url('../font/avara/bold/Avara-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/avara/bold/Avara-Bold.woff') format('woff'),
+    url('../font/avara/bold/Avara-Bold.woff2') format('woff2'),
+    url('../font/avara/bold/Avara-Bold.ttf') format('truetype'),
+    url('../font/avara/bold/Avara-Bold.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avara_Bold Italic';
+  src: url('../font/avara/bolditalic/Avara-Bold_Italic.eot');
+  src: url('../font/avara/bolditalic/Avara-Bold_Italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/avara/bolditalic/Avara-BoldItalic.woff') format('woff'),
+    url('../font/avara/bolditalic/Avara-BoldItalic.woff2') format('woff2'),
+    url('../font/avara/bolditalic/Avara-BoldItalic.ttf') format('truetype'),
+    url('../font/avara/bolditalic/Avara-BoldItalic.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avara_Black';
+  src: url('../font/avara/black/Avara-Black.eot');
+  src: url('../font/avara/black/Avara-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/avara/black/Avara-Black.woff') format('woff'),
+    url('../font/avara/black/Avara-Black.woff2') format('woff2'),
+    url('../font/avara/black/Avara-Black.ttf') format('truetype'),
+    url('../font/avara/black/Avara-Black.svg#svgFontName') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_Regular';
+  src: url('../font/redaction/normal/Redaction-Regular.otf') format('opentype'),
+    url('../font/redaction/normal/Redaction-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_Italic';
+  src: url('../font/redaction/normal/Redaction-Italic.otf') format('opentype'),
+    url('../font/redaction/normal/Redaction-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_Bold';
+  src: url('../font/redaction/normal/Redaction-Bold.otf') format('opentype'),
+    url('../font/redaction/normal/Redaction-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, .avara {
+  font-family: "Avara_Bold", Georgia, serif;
+}
+
+i, .avara-italic {
+  font-family: "Avara_Bold Italic", Georgia, serif;
+}
+
+b, .avara-black {
+  font-family: "Avara_Black", Georgia, serif;
+}
+
+.jost {
+  font-family: 'Jost', monospace;
+  font-weight: 300;
+}
+
+b.jost {
+  font-family: 'Jost', monospace;
+  font-weight: 700;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.redaction {
+  font-family: 'Redaction_Regular', serif;
+}
+
+.redaction-bold {
+  font-family: 'Redaction_Bold', serif;
+}
+
+.micro {
+  color: var(--micro);
+}
+
+em, .tonique {
+  color: var(--tonique);
+}
+
+.pakistani {
+  color: var(--pakistani);
+}
+
+.muriers {
+  color: var(--muriers);
+}
+
+svg {
+  fill: var(--bs-white);
+  max-width: 45vw;
+  min-width: 24vw;
+  transition: 0.2s;
+  margin: 0.5vw;
+}
+
+svg:hover {
+  fill: var(--tonique)
+}
+
+.huge {
+  color: var(--tonique);
+  font-size: 25vw;
+  cursor: pointer;
+}
+
+.huge:hover {
+  color: #FFFFFFFF;
+}
+
+.menu {
+  font-size: calc(1.375rem + 6.5vw);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--tonique);
+}
+
+.menu-icon {
+  -webkit-animation: alert 2s linear 0s infinite normal;
+  -moz-animation: alert 2s linear 0s infinite normal;
+  -ms-animation: alert 2s linear 0s infinite normal;
+  animation: alert 2s linear 0s infinite normal;
+  cursor: pointer;
+}
+
+@-webkit-keyframes alert {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  5% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  10% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  15% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  25% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  30% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  35% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  40% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  45% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes alert {
+  0% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  5% {
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  10% {
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  15% {
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20% {
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  25% {
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  30% {
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  35% {
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  40% {
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+
+  45% {
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  50% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.menu-icon:hover {
+  transform: scale(105%);
+  animation-play-state: paused;
+  /*insert effet d'aggrandissement whent hovered*/
+}
+
+/* marquee effect zone */
+/* Parent container of a .marquee3k element */
+.marquee3k {
+  overflow: hidden;
+  margin-top: 3em;
+}
+
+.diagonal-marquee {
+  transform: rotate(45deg);
+}
+
+.marquee3k__copy {
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+/* end of marquee effect zone*/
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  cursor: pointer;
+  transition: all 0.5s;
+  filter: blur(0);
+}
+
+.thumbnail:hover {
+  position: relative;
+  overflow: hidden;
+  background-clip: border-box;
+  color: var(--tonique);
+  /* Safari 6.0 - 9.0
+  -webkit-filter: blur(5px);
+  filter: blur(5px);*/
+}
+
+.thumbnail-disabled {
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  cursor: not-allowed;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.link-spanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* edit: fixes overlap error in IE7/8,
+     make sure you have an empty gif
+  background-image: url('empty.gif');*/
+}
+
+/* OVERLAY MENU ZONE*/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  right: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 10%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: left;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: var(--bs-white);
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: var(--tonique);
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+.overlay .closebtn {
+  top: 15px;
+  right: 35px;
+}
+}
+
+/*END OF OVERLAY MENU ZONE*/
