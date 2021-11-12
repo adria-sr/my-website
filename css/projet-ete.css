@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Avara Italic';
-  src: url('../font/avara/bolditalic/Avara-Bold_Italic.eot');
-  src: url('../font/avara/bolditalic/Avara-Bold_Italic.eot?#iefix') format('embedded-opentype'),
-    url('../font/avara/bolditalic/Avara-BoldItalic.woff') format('woff'),
-    url('../font/avara/bolditalic/Avara-BoldItalic.woff2') format('woff2'),
-    url('../font/avara/bolditalic/Avara-BoldItalic.ttf') format('truetype'),
-    url('../font/avara/bolditalic/Avara-BoldItalic.svg#svgFontName') format('svg');
+  src: url('font/avara/bolditalic/Avara-Bold_Italic.eot');
+  src: url('font/avara/bolditalic/Avara-Bold_Italic.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/bolditalic/Avara-BoldItalic.woff') format('woff'),
+    url('font/avara/bolditalic/Avara-BoldItalic.woff2') format('woff2'),
+    url('font/avara/bolditalic/Avara-BoldItalic.ttf') format('truetype'),
+    url('font/avara/bolditalic/Avara-BoldItalic.svg#svgFontName') format('svg');
   font-weight: normal;
   font-style: normal;
 }
