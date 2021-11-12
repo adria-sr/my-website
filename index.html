@@ -14,6 +14,10 @@
   <link rel="icon" href="img\favicon32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="img\favicon16.png" sizes="16x16" type="image/png">
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
   <!-- Google Fonts -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
@@ -89,7 +93,7 @@
     </header>
 
 
-    <div class="container-fluid m-0 p-0 text-white">
+    <div class="container-fluid mt-4 p-0 text-white">
       <div class="row g-0 position-absolute bottom-0">
         <div class="col me-3">
           <h1 class="huge avara-italic">Adrià</h1>
@@ -97,13 +101,19 @@
         <div class="col ms-3">
           <h1 class="avara-italic">Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio <em> Portfolio </em> Portfolio</h1>
         </div>
+        <div class="col-fluid text-center text-white mb-4">
+          <a href="#projets">&#8595; Voir mes projets &#8595;</a>
+        </div>
       </div>
+
     </div>
   </div>
 
+
+
   <!-- Main -->
   <main class="">
-    <div class="container-fluid p-0">
+    <div id="projets" class="container-fluid p-0">
       <div class="row g-0">
 
         <div class="col-sm-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-mer-new.jpg);">
@@ -230,5 +240,13 @@
 
 </body>
 <script src="js/marquee3k.js"></script>
+<script type="text/javascript">
+  $('a').click(function() {
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 1000);
+    return false;
+  });
+</script>
 
 </html>
