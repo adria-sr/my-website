@@ -45,7 +45,7 @@
 
   <!-- Header -->
 
-  <div class="container-fluid m-0 p-0" style="height: 100vh;">
+  <div class="container-fluid m-0 p-0">
     <header class="mb text-white">
       <div class="container-fluid m-0 p-0">
         <div class="" style="">
@@ -56,144 +56,154 @@
           </div>
         </div>
 
+        <div class="" style="height: 50vh;"></div>
 
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-
-          <!-- Button to close the overlay navigation -->
-          <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
-
-          <!-- Overlay content -->
-          <div class="overlay-content">
-            <div class="row g-0">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-auto">
-                <div class="m-4">
-                  <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
-                  <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
-                </div>
-                <div class="m-4">
-                  <h5><a href="contact.html"><i>Mentions légales</i></a></h5>
-                  <h5><a href="archive.html"><i>Archives</i></a></h5>
-                </div>
-                <div class="m-4" style="position: fixed; bottom: 0px;">
-                  <p class="jost">© Adrià SOUBIAS RABASSA v2.0.0</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
-      </div>
-    </header>
-
-
-    <div class="container-fluid mt-4 p-0 text-white">
-      <div class="row g-0 position-absolute bottom-0">
-        <div class="col me-3">
-          <h1 class="huge avara-italic">Adrià</h1>
-        </div>
-        <div class="col ms-3 mb-4">
-          <h1 class="avara-italic">Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio <em> Portfolio </em> Portfolio</h1>
-        </div>
-        <div class="col-fluid text-center text-white mb-4">
+        <div class="container-fluid mt-4 p-0 text-white text-center">
           <a href="#projets">&#8595; Voir mes projets &#8595;</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <div class="row g-0">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-auto">
+          <div class="m-3">
+            <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
+            <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
+          </div>
+          <div class="m-3">
+            <h5><a href="contact.html"><i>Mentions légales</i></a></h5>
+            <h5><a href="archive.html"><i>Archives</i></a></h5>
+          </div>
+          <div class="m-3" style="position: fixed; bottom: 0px;">
+            <p class="jost">© Adrià SOUBIAS RABASSA v2.0.0</p>
+          </div>
         </div>
       </div>
 
     </div>
+
   </div>
 
-
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
+  </header>
 
   <!-- Main -->
   <main class="">
-    <div id="projets" class="container-fluid p-0">
+    <div id="projets" class="container-fluid px-4">
       <div class="row g-0">
 
-        <div class="col-lg-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-mer-new.jpg);">
+        <div class="col-lg-5 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-mer-new.jpg);">
           <a href="projet-carnet-partie1.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Carnets d'été</h4>
+            <h4 class="thumbnail"></h4>
           </a>
         </div>
 
-        <div class="col-lg-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-micro.jpg); background-position: 10%;">
-          <a href="projet-micro.html">
-            <span class="link-spanner"></span>
-            <h4 class="avara-black">Micro édition</h4>
-          </a>
-        </div>
 
-        <div class="col-lg-4 text-black bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-rome.jpg); background-size : contain; background-color: #FFF;">
-          <a href="projet-mafonte.html">
-            <span class="link-spanner"></span>
-            <h4 class="avara-black">Ma Fonte</h4>
-          </a>
-        </div>
-
-        <div class="col-lg-8 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-bike.jpg); background-position: 63%;">
-          <a href="projet-bike-pictures.html">
-            <span class="link-spanner"></span>
-            <h4 class="avara-black">Bike photography</h4>
-          </a>
-        </div>
-
-        <div class="col-lg-8 text-black p-4 thumbnail" style="background-image: url(img/thumbnail-muriers.jpg); background-size : contain; background-color: #FFF;">
-          <a href="projet-muriers.html">
-            <span class="link-spanner"></span>
-            <h4 class="avara-black">Restaurant Les Mûriers</h4>
-          </a>
-        </div>
-
-        <div class="col-lg-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-music.jpg); background-size : contain; background-color: #e8d7ad;">
-          <a href="projet-pakistani.html">
-            <span class="link-spanner"></span>
-            <h4 class="avara-black">Calligraphie numérique</h4>
-          </a>
-        </div>
-
-        <div class="col-lg-4 text-white bg-image p-4 thumbnail" style="background-image: url(img/thumbnail-stenopes.jpg); background-size : contain; background-color: #000;">
+        <div class="col-lg-5 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-stenopes.jpg); background-size : contain; background-color: #000;">
           <a href="projet-stenope.html">
             <span class="link-spanner"></span>
-            <h4 class="avara-black">Sténopés</h4>
+            <h4 class="thumbnail"></h4>
           </a>
         </div>
 
-        <div class="col-lg-8 text-black bg-image p-4 thumbnail-disabled" style="background-image: url(img/thumbnail-bus.jpg);">
+        <div class="w-100" style="height:35vh;"></div>
+
+        <div class="col-3"> </div>
+
+
+        <div class="col-sm-4 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-micro.jpg); background-position: 10%;">
+          <a href="projet-micro.html">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"></h4>
+          </a>
+        </div>
+
+        <div class="" style="height:35vh;"></div>
+
+
+        <div class="col-lg-4 text-black bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-rome.jpg); background-size : contain; background-color: #FFF;">
+          <a href="projet-mafonte.html">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"></h4>
+          </a>
+        </div>
+
+        <div class="col-lg-6 text-black p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-muriers.jpg); background-size : contain; background-color: #FFF;">
+          <a href="projet-muriers.html">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"></h4>
+          </a>
+        </div>
+
+        <div class="col-3"></div>
+
+        <div class="col-lg-4 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-music.jpg); background-size : contain; background-color: #e8d7ad; background-position: 50% 50%;">
+          <a href="projet-pakistani.html">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"></h4>
+          </a>
+        </div>
+
+        <div class="" style="height:35vh;"></div>
+
+
+        <div class="col-lg-10 text-whitebg-image p-4 m-3 thumbnail border border-white align-self-end" style="background-image: url(img/thumbnail-bike.jpg); background-position: 63%;">
+          <a href="projet-bike-pictures.html">
+            <span class="link-spanner"></span>
+            <h4 class="thumbnail"></h4>
+          </a>
+        </div>
+
+        <div class="" style="height:35vh;"></div>
+
+        <div class="col-5"></div>
+
+
+        <div class="col-lg-6 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-rouille.jpg);">
 
           <span class="link-spanner"></span>
-          <h4 class="avara-black">Photographie sensible</h4>
+          <h4 class="thumbnail"></h4>
 
         </div>
 
-        <div class="col-lg-8 text-white bg-image p-4 thumbnail-disabled" style="background-image: url(img/thumbnail-rouille.jpg);">
-
-          <span class="link-spanner"></span>
-          <h4 class="avara-black">Impressions de rouille</h4>
-
-        </div>
-
-        <div class="col-lg-4 text-black bg-image p-4 thumbnail-disabled" style="background-image: url(img/thumbnail-bvm.jpg);">
-
-          <span class="link-spanner"></span>
-          <h4 class="avara-black">Flyer Baromètre des villes marchables</h4>
-
-        </div>
-
-        <div class="col-lg-4 text-white bg-image p-4 thumbnail-disabled" style="background-image: url(img/thumbnail-gravure.jpg);">
+        <!--
+        <div class="col-lg-3 text-white bg-image p-4 m-3 thumbnail " style="background-image: url(img/thumbnail-gravure.jpg);">
 
           <span class="link-spanner"></span>
           <h4 class="avara-black">Gravure</h4>
 
-        </div>
+        </div> -->
 
-        <div class="col-lg-8">
+        <!--
+        <div class="col-lg-6 text-black bg-image p-4 m-3 thumbnail-disabled" style="background-image: url(img/thumbnail-bus.jpg);">
+
+          <span class="link-spanner"></span>
+          <h4 class="avara-black">Photographie sensible</h4>
+
+        </div>-->
+
+        <!-- BAROMÈTRE
+        <div class="col-lg-3 text-black bg-image p-4 m-3 thumbnail-disabled" style="background-image: url(img/thumbnail-bvm.jpg);">
+
+          <span class="link-spanner"></span>
+          <h4 class="avara-black">Flyer Baromètre des villes marchables</h4>
+
+        </div>-->
+
+
+        <div class="col-lg-6">
         </div>
 
       </div>

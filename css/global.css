@@ -311,13 +311,15 @@ a:hover {
 .thumbnail {
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
   cursor: pointer;
   transition: all 0.5s;
-  filter: blur(0);
+  font-size: calc(1.375rem + 6vw);
+  font-family: "Avara_Black", serif;
 }
 
 .thumbnail:hover {
@@ -325,9 +327,9 @@ a:hover {
   overflow: hidden;
   background-clip: border-box;
   color: var(--tonique);
-  /* Safari 6.0 - 9.0
-  -webkit-filter: blur(5px);
-  filter: blur(5px);*/
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
 
 .thumbnail-disabled {
