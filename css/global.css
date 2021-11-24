@@ -105,6 +105,11 @@ b, .avara-black {
   font-weight: 300;
 }
 
+ul, li {
+  font-family: "Avara_Bold Italic", Georgia, serif;
+  list-style-type: none;
+}
+
 b.jost {
   font-family: 'Jost', monospace;
   font-weight: 700;
@@ -152,7 +157,7 @@ svg:hover {
 
 .huge {
   color: var(--tonique);
-  font-size: 25vw;
+  font-size: 20vw;
   cursor: pointer;
 }
 
@@ -334,18 +339,6 @@ a:hover {
   height: 60vh;
   cursor: pointer;
   transition: all 0.5s;
-  font-size: calc(1.375rem + 6vw);
-  font-family: "Avara_Black", serif;
-}
-
-.thumbnail:hover {
-  position: relative;
-  overflow: hidden;
-  background-clip: border-box;
-  color: var(--tonique);
-  -webkit-filter: grayscale(0%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
 }
 
 .thumbnail-disabled {
@@ -359,6 +352,11 @@ a:hover {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+.thumbnail-text {
+  font-size: calc(1.375rem + 25vw);
+  font-family: "Avara_Black", serif;
 }
 
 .link-spanner {

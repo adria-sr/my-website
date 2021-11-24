@@ -39,7 +39,7 @@
 
 </head>
 
-<body class="is--noisy" style="">
+<body class="bg-black" style="">
 
   <!-- Page -->
 
@@ -47,22 +47,11 @@
   <!-- Header -->
 
   <div class="container-fluid m-0 p-0">
+
     <header class="mb text-white">
-      <div class="container-fluid m-0 p-0">
-        <div class="" style="">
-          <div class="marquee3k" data-speed="2" data-reverse="false" data-pausable="yes">
-            <!--you can even have inline images,
-          or any kind of html -->
-            <h3> <i>découvre mon travail</i> </h3>
-          </div>
-        </div>
-
-        <div class="" style="height: 50vh;"></div>
-
-        <div class="container-fluid mt-4 p-0 text-white text-center">
-          <a href="#projets">&#8595; Voir mes projets &#8595;</a>
-        </div>
-      </div>
+      <p class="m-2 pt-2">Adrià Soubias Rabassa
+      </p>
+  </div>
   </div>
 
   <!-- The overlay -->
@@ -96,7 +85,7 @@
   </div>
 
   <!-- Use any element to open/show the overlay navigation menu -->
-  <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
+  <img onclick="openNav()" class="img-fluid position-absolute top-0 end-0 m-3" src="img/menu-icon.png" alt="Icone du menu">
   </header>
 
   <!-- Main -->
@@ -104,34 +93,68 @@
     <div id="projets" class="container-fluid px-4">
       <div class="row g-0">
 
-        <div class="col-lg-5 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-mer-new.jpg);">
-          <a href="projet-carnet-partie1.html">
-            <span class="link-spanner"></span>
-            <h4 class="thumbnail"></h4>
-          </a>
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-mer-new.jpg);">
+          <div class="marquee3k" data-speed="3">
+            <a href="projet-carnet-partie1.html">
+              <span class="link-spanner"></span>
+              <h1 class="thumbnail-text">Carnets d'été </h1>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <div class="position-absolute bottom-0">
+            <h2>Carnets d'été</h2>
+            <p>
+            <ul>
+              <li>Carnet de voyage</li>
+              <li>Edition web</li>
+            </ul>
+            </p>
+          </div>
         </div>
 
 
-        <div class="col-lg-5 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-stenopes.jpg); background-size : contain; background-color: #000;">
-          <a href="projet-stenope.html">
-            <span class="link-spanner"></span>
-            <h4 class="thumbnail"></h4>
-          </a>
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-stenopes.jpg); background-size : contain; background-color: #000;">
+          <div class="marquee3k" data-speed="4">
+            <a href="projet-=stenopes.html">
+              <span class="link-spanner"></span>
+              <h1 class="thumbnail-text"> Sténopés </h1>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <div class="position-absolute bottom-0">
+            <h2>Sténopés</h2>
+            <p>
+            <ul>
+              <li>Expérimentation</li>
+              <li>Argentique</li>
+            </ul>
+            </p>
+          </div>
         </div>
 
-        <div class="w-100" style="height:35vh;"></div>
-
-        <div class="col-3"> </div>
 
 
-        <div class="col-sm-4 text-white bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-micro.jpg); background-position: 10%;">
-          <a href="projet-micro.html">
-            <span class="link-spanner"></span>
-            <h4 class="thumbnail"></h4>
-          </a>
+        <div class="col-md-8 text-white bg-image m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-micro.jpg); background-position: 10%;">
+          <div class="marquee3k" data-speed="2.3">
+            <a href="projet-micro.html">
+              <span class="link-spanner"></span>
+              <h1 class="thumbnail-text"> Micro </h1>
+            </a>
+          </div>
         </div>
-
-        <div class="" style="height:35vh;"></div>
+        <div class="col-md-3 text-white m-3 position-relative">
+          <div class="position-absolute bottom-0">
+            <h2>Micro édition</h2>
+            <p>
+            <ul>
+              <li>Print</li>
+              <li>Tout petit format</li>
+            </ul>
+            </p>
+          </div>
+        </div>
 
 
         <div class="col-lg-4 text-black bg-image p-4 m-3 thumbnail border border-white" style="background-image: url(img/thumbnail-rome.jpg); background-size : contain; background-color: #FFF;">
@@ -156,9 +179,6 @@
             <h4 class="thumbnail"></h4>
           </a>
         </div>
-
-        <div class="" style="height:35vh;"></div>
-
 
         <div class="col-lg-10 text-whitebg-image p-4 m-3 thumbnail border border-white align-self-end" style="background-image: url(img/thumbnail-bike.jpg); background-position: 63%;">
           <a href="projet-bike-pictures.html">
