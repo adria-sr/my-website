@@ -72,6 +72,22 @@
   font-style: normal;
 }
 
+/*body {
+  background: url("assets/img/noisy.png");
+  background-color: #091612;
+  animation: is--noisy 1s steps(10) infinite;
+  opacity: .8;
+}
+
+@keyframes is--noisy {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 70px 280px;
+  }
+}*/
 p, h1, h2, h3, h4, h5, h6, a, .avara {
   font-family: "Avara_Bold", Georgia, serif;
 }
