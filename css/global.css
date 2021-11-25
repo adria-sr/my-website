@@ -355,7 +355,7 @@ a:hover {
 }
 
 .thumbnail-text {
-  font-size: calc(1.375rem + 25vw);
+  font-size: calc(1.375rem + 23vw);
   font-family: "Avara_Black", serif;
 }
 

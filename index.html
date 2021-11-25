@@ -31,8 +31,6 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/global.css">
 
-
-
   <!-- JS -->
   <script src="js/global.js"></script>
 
@@ -46,13 +44,21 @@
 
   <!-- Header -->
 
-  <div class="container-fluid m-0 p-0">
 
-    <header class="mb text-white">
-      <p class="m-2 pt-2">Adrià Soubias Rabassa
-      </p>
-  </div>
-  </div>
+  <header class="mb text-white">
+    <div class="container-fluid m-2 p-2">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <p class="navbar-brand">Adrià Soubias Rabassa</p>
+          <svg onclick="openNav()" class="nav-nav" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+          </svg>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
 
   <!-- The overlay -->
   <div id="myNav" class="overlay">
@@ -79,14 +85,8 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
-
-  <!-- Use any element to open/show the overlay navigation menu -->
-  <img onclick="openNav()" class="img-fluid position-absolute top-0 end-0 m-3" src="img/menu-icon.png" alt="Icone du menu">
-  </header>
 
   <!-- Main -->
   <main class="">
