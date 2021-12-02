@@ -88,8 +88,19 @@
     background-position: 70px 280px;
   }
 }*/
-p, h1, h2, h3, h4, h5, h6, a, .avara {
-  font-family: "Avara_Bold", Georgia, serif;
+h1, a, .avara {
+  font-family: "Avara_Black", Georgia, serif;
+}
+
+p, .plex {
+  font-family: 'IBM Plex Sans', monospace;
+  font-style: normal;
+  font-weight: 300;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', monospace;
+  font-weight: 800;
 }
 
 i, .avara-italic {
@@ -105,14 +116,18 @@ header {
   z-index: 1;
 }
 
-.jost {
-  font-family: 'Jost', monospace;
-  font-weight: 300;
+.plex {
+  font-family: 'IBM Plex Sans', monospace;
+  font-weight: 100;
 }
 
 ul, li {
-  font-family: "Avara_Bold Italic", Georgia, serif;
+  font-family: "IBM Plex Sans", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
   list-style-type: none;
+  margin: 0;
+  padding-left: 3px;
 }
 
 b.jost {
