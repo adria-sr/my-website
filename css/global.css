@@ -98,12 +98,18 @@ p, .plex {
   font-weight: 300;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h2 a, h3, h4, h5, h6 {
   font-family: 'IBM Plex Sans', monospace;
   font-weight: 800;
 }
 
-i, .avara-italic {
+i {
+  font-family: 'IBM Plex Sans', monospace;
+  font-style: italic;
+  font-weight: 300;
+}
+
+h1 i, h1 a, .avara-italic {
   font-family: "Avara_Bold Italic", Georgia, serif;
 }
 
@@ -183,12 +189,28 @@ svg:hover {
 
 .huge {
   color: var(--tonique);
+  font-family: 'Avara_Black';
   font-size: 47vw;
   cursor: pointer;
+  animation: changeTypoHuge infinite 1s;
 }
 
 .huge:hover {
   color: #FFFFFFFF;
+}
+
+@keyframes changeTypoHuge {
+  0% {
+    font-family: 'Avara_Black';
+  }
+
+  33% {
+    font-family: 'Avara_Bold';
+  }
+
+  66% {
+    font-family: 'Avara_Bold Italic';
+  }
 }
 
 .menu {
