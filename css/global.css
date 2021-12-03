@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*!
+/*
  * <> by Adrià SOUBIAS RABASSA,
  * Tout droits réservés
  * 2021
@@ -48,7 +48,7 @@
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Redaction_Regular';
   src: url('font/redaction/normal/Redaction-Regular.otf') format('opentype'),
     url('font/redaction/normal/Redaction-Regular.woff2') format('woff2');
@@ -70,41 +70,25 @@
     url('font/redaction/normal/Redaction-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
-
-/*body {
-  background: url("assets/img/noisy.png");
-  background-color: #091612;
-  animation: is--noisy 1s steps(10) infinite;
-  opacity: .8;
-}
-
-@keyframes is--noisy {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 70px 280px;
-  }
 }*/
 h1, a, .avara {
   font-family: "Avara_Black", Georgia, serif;
 }
 
 p, .plex {
-  font-family: 'IBM Plex Sans', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
 }
 
 h2, h2 a, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Sans', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
   font-weight: 800;
 }
 
 i {
-  font-family: 'IBM Plex Sans', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-style: italic;
   font-weight: 300;
 }
@@ -113,18 +97,19 @@ h1 i, h1 a, .avara-italic {
   font-family: "Avara_Bold Italic", Georgia, serif;
 }
 
-b, .avara-black {
+.avara-black {
   font-family: "Avara_Black", Georgia, serif;
+}
+
+b {
+  font-family: 'IBM Plex Sans', monospace;
+  font-style: italic;
+  font-weight: 600;
 }
 
 header {
   border-radius: 20px;
   z-index: 1;
-}
-
-.plex {
-  font-family: 'IBM Plex Sans', monospace;
-  font-weight: 100;
 }
 
 ul, li {
@@ -145,28 +130,12 @@ b.jost {
   text-align: justify;
 }
 
-.redaction {
-  font-family: 'Redaction_Regular', serif;
-}
-
-.redaction-bold {
-  font-family: 'Redaction_Bold', serif;
-}
-
 .micro {
   color: var(--micro);
 }
 
 em, .tonique {
   color: var(--tonique);
-}
-
-.pakistani {
-  color: var(--pakistani);
-}
-
-.muriers {
-  color: var(--muriers);
 }
 
 .huge-svg {
@@ -177,10 +146,15 @@ em, .tonique {
   margin: 0.5vw;
 }
 
-.svg-menu {
+.svg-menu, .svg-menu-black {
   fill: var(--bs-white);
   transition: 0.2s;
   margin: 0.5vw;
+  cursor: pointer;
+}
+
+.svg-menu-black {
+  fill: var(--bs-black);
 }
 
 svg:hover {
