@@ -24,6 +24,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <!-- My CSS -->
+  <link rel="stylesheet" href="css/ibm-plex.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/global.css">
 
@@ -38,130 +39,137 @@
 <body class="bg-white">
 
   <!-- Header -->
+  <!-- Header -->
+  <header class=" bg-white">
+    <nav class="navbar ms-4">
+      <div class="container-fluid ms-1">
+        <div class="d-flex">
+          <a href="index.html" class="navbar-brand my-auto"> Adrià Soubias Rabassa</a>
+        </div>
+        <div class="d-flex flex-row-reverse nav-item">
+          <svg onclick="openNav()" style="" class="svg-menu-black" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <div class="container-fluid m-0 p-0">
-    <header class="mb text-white">
-      <div class="container-fluid m-0 p-0">
-
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-
-          <!-- Button to close the overlay navigation -->
-          <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
-
-          <!-- Overlay content -->
-          <div class="overlay-content">
-            <div class="row g-0">
-              <div class="col-2">
+    <div class="container-fluid m-0 p-0">
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <div class="row g-0">
+            <div class="col-2">
+            </div>
+            <div class="col-auto">
+              <div class="m-2">
+                <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
+                <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
+                <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
               </div>
-              <div class="col-auto">
-                <div class="m-2">
-                  <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
-                  <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
-                  <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
-                </div>
-                <div class="m-2">
-                  <h5><a href="contact.html#mentions-legales"><i>Mentions légales</i></a></h5>
-                  <h5><a href="archive.html"><i>Archives</i></a></h5>
-                </div>
-                <div class="m-4" style="position: fixed; bottom: 0px;">
-                  <p class="jost">© Adrià SOUBIAS RABASSA v2.0.0</p>
-                </div>
+              <div class="m-2">
+                <h5><a href="contact.html#mentions-legales"><i>Mentions légales</i></a></h5>
+                <h5><a href="archive.html"><i>Archives</i></a></h5>
+              </div>
+              <div class="m-4" style="position: fixed; bottom: 0px;">
+                <p class="jost">© Adrià SOUBIAS RABASSA v2.0.0</p>
               </div>
             </div>
-
           </div>
-
-        </div>
-
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
-      </div>
-    </header>
-
-    <div class="container-fluid m-0 p-0" style="z-index: 1;">
-      <img src="img/pakistani-full.jpg" class="img-fluid" alt="">
-    </div>
-
-
-    <div class="container-fluid my-4">
-      <div class="row g-0">
-        <div class="col-auto mx-4">
-          <h1 class="pakistani">Calligraphies <br> numériques</h1>
-        </div>
-        <div class="col-5 mx-4">
-          <p class="jost">Représentation visuelle d'une musique en motion design et 3D.
-            Chaque élément représente un instrument, un son, une intonation vocale... <br>
-            La vidéo est accompagnée de son répertoire visuel édité sous forme de livret.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container mx-auto my-1">
-    <div class="responsive-video my-3">
-      <iframe src="https://www.youtube.com/embed/4_0LPK3AgTM" title="Pakistani Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div id="carouselPages" class="carousel my-3" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/pakistani-carnet1.jpg" class="d-block image-fluid w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pakistani-carnet2.jpg" class="d-block image-fluid w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pakistani-carnet3.jpg" class="d-block image-fluid w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pakistani-carnet4.jpg" class="d-block image-fluid w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pakistani-carnet5.jpg" class="d-block image-fluid w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pakistani-carnet6.jpg" class="d-block image-fluid w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPages" data-bs-slide="prev">
-        <svg class="carousel-control-prev-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-        </svg>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselPages" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <svg class="carousel-control-next-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-        </svg>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <img src="img/pakistani-1.jpg" class="img-fluid my-3" alt="">
-    <img src="img/pakistani-2.jpg" class="img-fluid my-3" alt="">
-    <img src="img/pakistani-3.jpg" class="img-fluid my-3" alt="">
-    <img src="img/pakistani-4.jpg" class="img-fluid my-3" alt="">
-  </div>
+
+      <div class="container-fluid m-0 p-0" style="z-index: 1;">
+        <img src="img/pakistani-full.jpg" class="img-fluid" alt="">
+      </div>
 
 
+      <div class="container bg-white mt-4">
+        <div class="row">
+          <div class="col-6">
+            <p class="m-0"><b>Pakistani</b></p>
+            <ul>
+              <li>Motion design</li>
+              <li>Calligraphie</li>
+              <li>3D</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <p>Représentation visuelle d'une musique en motion design et 3D.
+              Chaque élément représente un instrument, un son, une intonation vocale... <br>
+              La vidéo est accompagnée de son répertoire visuel édité sous forme de livret.</p>
+          </div>
+        </div>
+      </div>
 
-  <main>
 
-  </main>
+      <div class="container mx-auto my-1">
+        <div class="responsive-video my-3">
+          <iframe src="https://www.youtube.com/embed/4_0LPK3AgTM" title="Pakistani Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="carouselPages" class="carousel my-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/pakistani-carnet1.jpg" class="d-block image-fluid w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/pakistani-carnet2.jpg" class="d-block image-fluid w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/pakistani-carnet3.jpg" class="d-block image-fluid w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/pakistani-carnet4.jpg" class="d-block image-fluid w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/pakistani-carnet5.jpg" class="d-block image-fluid w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/pakistani-carnet6.jpg" class="d-block image-fluid w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPages" data-bs-slide="prev">
+            <svg class="carousel-control-prev-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPages" data-bs-slide="next">
+            <svg class="carousel-control-next-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="img/pakistani-1.jpg" class="img-fluid my-3" alt="">
+        <img src="img/pakistani-3.jpg" class="img-fluid my-3" alt="">
+        <img src="img/pakistani-4.jpg" class="img-fluid my-3" alt="">
+
+      </div>
+
+      <main>
+
+      </main>
 
 
-  <!-- Footer -->
-  <footer class="pakistani">
-    <div class="container mx-auto mt-2 p-0 text-center">
-      <h5>
-        <a class="redaction-bold" href="index.html">Accueil</a> |
-        <a class="redaction-bold" href="contact.html">Contact</a> |
-        <a class="redaction-bold" href="a-propos.html">A propos</a>
-      </h5>
-    </div>
-  </footer>
+      <!-- Footer -->
+      <footer class="pakistani">
+        <div class="container mx-auto mt-2 p-0 text-center">
+          <h5>
+            <a class="redaction-bold" href="index.html">Accueil</a> |
+            <a class="redaction-bold" href="contact.html">Contact</a> |
+            <a class="redaction-bold" href="a-propos.html">A propos</a>
+          </h5>
+        </div>
+      </footer>
 
 </body>
 <script src="js/marquee3k.js"></script>
