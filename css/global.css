@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*!
+/*
  * <> by Adrià SOUBIAS RABASSA,
  * Tout droits réservés
  * 2021
@@ -48,7 +48,7 @@
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Redaction_Regular';
   src: url('font/redaction/normal/Redaction-Regular.otf') format('opentype'),
     url('font/redaction/normal/Redaction-Regular.woff2') format('woff2');
@@ -70,23 +70,55 @@
     url('font/redaction/normal/Redaction-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
-
-p, h1, h2, h3, h4, h5, h6, a, .avara {
-  font-family: "Avara_Bold", Georgia, serif;
-}
-
-i, .avara-italic {
-  font-family: "Avara_Bold Italic", Georgia, serif;
-}
-
-b, .avara-black {
+}*/
+h1, a, .avara {
   font-family: "Avara_Black", Georgia, serif;
 }
 
-.jost {
-  font-family: 'Jost', monospace;
+p, .plex {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
   font-weight: 300;
+}
+
+h2, h2 a, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+i {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+h1 i, h1 a, .avara-italic {
+  font-family: "Avara_Bold Italic", Georgia, serif;
+}
+
+.avara-black {
+  font-family: "Avara_Black", Georgia, serif;
+}
+
+b {
+  font-family: 'IBM Plex Sans', monospace;
+  font-style: normal;
+  font-weight: 800;
+}
+
+header {
+  border-radius: 20px;
+  z-index: 1;
+}
+
+ul, li {
+  font-family: "IBM Plex Sans", Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 3px;
 }
 
 b.jost {
@@ -98,14 +130,6 @@ b.jost {
   text-align: justify;
 }
 
-.redaction {
-  font-family: 'Redaction_Regular', serif;
-}
-
-.redaction-bold {
-  font-family: 'Redaction_Bold', serif;
-}
-
 .micro {
   color: var(--micro);
 }
@@ -114,20 +138,23 @@ em, .tonique {
   color: var(--tonique);
 }
 
-.pakistani {
-  color: var(--pakistani);
-}
-
-.muriers {
-  color: var(--muriers);
-}
-
-svg {
+.huge-svg {
   fill: var(--bs-white);
   max-width: 45vw;
   min-width: 24vw;
   transition: 0.2s;
   margin: 0.5vw;
+}
+
+.svg-menu, .svg-menu-black {
+  fill: var(--bs-white);
+  transition: 0.2s;
+  margin: 0.5vw;
+  cursor: pointer;
+}
+
+.svg-menu-black {
+  fill: var(--bs-black);
 }
 
 svg:hover {
@@ -136,12 +163,28 @@ svg:hover {
 
 .huge {
   color: var(--tonique);
-  font-size: 25vw;
+  font-family: 'Avara_Black';
+  font-size: 47vw;
   cursor: pointer;
+  animation: changeTypoHuge infinite 1s;
 }
 
 .huge:hover {
   color: #FFFFFFFF;
+}
+
+@keyframes changeTypoHuge {
+  0% {
+    font-family: 'Avara_Black';
+  }
+
+  33% {
+    font-family: 'Avara_Bold';
+  }
+
+  66% {
+    font-family: 'Avara_Bold Italic';
+  }
 }
 
 .menu {
@@ -157,6 +200,7 @@ svg:hover {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.2s;
 }
 
 a:hover {
@@ -311,23 +355,18 @@ a:hover {
 .thumbnail {
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale();
   background-size: cover;
   height: 60vh;
   cursor: pointer;
   transition: all 0.5s;
-  filter: blur(0);
 }
 
 .thumbnail:hover {
-  position: relative;
-  overflow: hidden;
-  background-clip: border-box;
-  color: var(--tonique);
-  /* Safari 6.0 - 9.0
-  -webkit-filter: blur(5px);
-  filter: blur(5px);*/
+  filter: none;
 }
 
 .thumbnail-disabled {
@@ -341,6 +380,11 @@ a:hover {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+.thumbnail-text {
+  font-size: calc(1.375rem + 23vw);
+  font-family: "Avara_Black", serif;
 }
 
 .link-spanner {
@@ -363,7 +407,7 @@ a:hover {
   width: 0;
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
   right: 0;
   top: 0;

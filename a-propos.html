@@ -40,53 +40,47 @@
 
 
   <!-- Header -->
+  <header class=" text-white bg-black">
+    <nav class="navbar ms-4">
+      <div class="container-fluid ms-1">
+        <div class="d-flex">
+          <a href="index.html" class="navbar-brand my-auto"> Adrià Soubias Rabassa</a>
+        </div>
+        <div class="d-flex flex-row-reverse nav-item">
+          <svg onclick="openNav()" class="svg-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <div class="container-fluid m-0 p-0" style="height: 100vh;">
-    <header class="mb text-white">
-      <div class="container-fluid m-0 p-0">
-        <div class="" style="">
-          <div class="marquee3k" data-speed="2" data-reverse="false" data-pausable="yes">
-            <!--you can even have inline images,
-          or any kind of html -->
-            <h3> <i>a propos de moi</i> </h3>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <div class="row g-0">
+          <div class="col-sm-2">
           </div>
-        </div>
-
-
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-
-          <!-- Button to close the overlay navigation -->
-          <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
-
-          <!-- Overlay content -->
-          <div class="overlay-content">
-            <div class="row g-0">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-auto">
-                <div class="m-4">
-                  <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
-                  <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
-                </div>
-                <div class="m-4">
-                  <h5><a href="contact.html#mentions-legales" onclick="closeNav();"><i>Mentions légales</i></a></h5>
-                  <h5><a href="archive.html"><i>Archives</i></a></h5>
-                </div>
-                <div class="m-4" style="position: fixed; bottom: 0px;">
-                  <p class="jost">Adrià SOUBIAS RABASSA v2.0.0</p>
-                </div>
-              </div>
+          <div class="col-auto">
+            <div class="m-4">
+              <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
+              <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
             </div>
-
+            <div class="m-4">
+              <h5><a href="contact.html#mentions-legales" onclick="closeNav();"><i>Mentions légales</i></a></h5>
+              <h5><a href="archive.html"><i>Archives</i></a></h5>
+            </div>
+            <div class="m-4" style="position: fixed; bottom: 0px;">
+              <p class="jost">Adrià SOUBIAS RABASSA v2.1.0</p>
+            </div>
           </div>
-
         </div>
-
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
       </div>
-    </header>
+    </div>
 
     <div class="" style="height: 22vh;">
 
@@ -146,18 +140,36 @@
 
     <!-- Footer -->
     <footer class="text-white">
-      <div class="" style="height: 5vh;"></div>
-      <div class="text-center">
-        <p> <a href="https://github.com/adria-sr">
-            <b>
-              <>
-            </b>
-          </a> by adrià soubias rabassa <br>
-      </div>
-  </div>
-  </footer>
+      <div class="container-fluid mt-4 p-0">
+        <div class="marquee3k m-0 p-0" data-speed="2" data-pausable="yes">
+          <p class="avara tonique">en recherche de stage</p>
+        </div>
+        <div class="marquee3k m-0 p-0" data-speed="3" data-reverse="false" data-pausable="yes">
+          <a href="index.html#projets">
+            <h1 style="font-size: 12em;"><i>projets</i></h1>
+          </a>
+        </div>
+        <div class="marquee3k m-0 p-0" data-speed="1.5" data-pausable="yes">
+          <h1><a href="contact.html"><i>contact</i></a></h1>
+        </div>
+        <div class="text-center">
+          <div class="" style="height: 10vh;"> </div>
+          <div class="row g-0">
+            <div class="col-6">
+            </div>
+          </div>
+        </div>
+        <div class="" style="height: 10vh;"></div>
+        <div class="text-center">
+          <p> <a href="https://github.com/adria-sr">
 
-</body>
-<script src="js/marquee3k.js"></script>
+              <>
+
+            </a> by adrià soubias rabassa <br> ce site web est composé en <a href="https://www.velvetyne.fr/fonts/avara/">Avara</a>, dessinée
+            par Raphaël Bastide + Lucas Le Bihan + Wei Huang + Walid Bouchouchi <br> ainsi qu'en <a href="https://www.ibm.com/plex/"><b class="jost">IBM Plex</b></a> dessinée par la team d'IBM Design.</p>
+        </div>
+      </div>
+    </footer </body>
+    <script src="js/marquee3k.js"></script>
 
 </html>
