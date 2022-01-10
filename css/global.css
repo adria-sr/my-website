@@ -108,7 +108,7 @@ b {
 }
 
 header {
-  border-radius: 20px;
+  border-radius: 0;
   z-index: 1;
 }
 
@@ -407,7 +407,7 @@ a:hover {
   width: 0;
   position: fixed;
   /* Stay in place */
-  z-index: 10;
+  z-index: 2000;
   /* Sit on top */
   right: 0;
   top: 0;
