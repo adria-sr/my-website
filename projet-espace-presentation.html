@@ -1,18 +1,23 @@
 <!doctype html>
-<html lang="fr" class="h-100">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Adrià Soubias Rabassa">
-  <title>Restaurant Les Mûriers - Identité visuelle</title>
+  <title>Projet Espace Sensible</title>
 
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="img\favicon180.png" sizes="180x180">
   <link rel="icon" href="img\favicon32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="img\favicon16.png" sizes="16x16" type="image/png">
+
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+  </style>
 
   <!-- Bootstrap CDN CSS+JS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,11 +31,10 @@
 
   <!-- JS -->
   <script src="js/global.js"></script>
-
-
 </head>
 
-<body class="bg-white text-black">
+<body class="w-100 bg-white">
+
 
   <!-- Header -->
   <header class="bg-white fixed-top">
@@ -49,27 +53,26 @@
   </header>
 
 
-  <!-- The overlay -->
   <div id="myNav" class="overlay">
-
     <!-- Button to close the overlay navigation -->
     <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
 
     <!-- Overlay content -->
     <div class="overlay-content">
       <div class="row g-0">
-        <div class="col-sm-3">
+        <div class="col-2">
         </div>
         <div class="col-auto">
-          <div class="m-3">
+          <div class="m-2">
+            <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
             <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
             <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
           </div>
-          <div class="m-3">
-            <h5><a href="contact.html"><i>Mentions légales</i></a></h5>
+          <div class="m-2">
+            <h5><a href="contact.html#mentions-legales"><i>Mentions légales</i></a></h5>
             <h5><a href="archive.html"><i>Archives</i></a></h5>
           </div>
-          <div class="m-3" style="position: fixed; bottom: 0px;">
+          <div class="m-4" style="position: fixed; top: 0px;">
             <p class="jost">© Adrià SOUBIAS RABASSA</p>
           </div>
         </div>
@@ -78,46 +81,40 @@
   </div>
 
 
-  <main>
-    <div class="container-fluid mx-auto my-4 text-center" style="height: 100vh;">
-      <img src="img/muriers-logo.jpg" class="img-fluid" alt="Logo du restaurant Les Mûriers">
-    </div>
 
+  <!-- /.header -->
 
-    <div class="container bg-white">
-      <div class="row">
-        <div class="col-6">
-          <p class="m-0"><b>Les Mûriers</b></p>
-          <ul>
-            <li>Identité visuelle</li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <p>Identité visuelle du restaurant gastronomique d'application du Lycée hôtelier Renée Bonnet. Le logo affirme un lien fort avec la terre et le terroir à travers ses couleurs et l'empreinte de chou qui anime la médaille orangée.</p>
-
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <img src="img/muriers-mockup2.jpg" class="img-fluid mx-auto d-block my-2" alt="">
-      <img src="img/muriers-mockup1.jpg" class="img-fluid my-2" alt="">
-      <img src="img/muriers-mockup3.jpg" class="img-fluid my-2" alt="">
-      <p class=" text-center">Projet réalisé en collaboration avec <a href="http://portfoli.ooo/si21dn/maurane/" target="_blank">Maurane Lupiac.</a></p>
-    </div>
-  </main>
-
-  <div class="container-fluid p-0 m-0">
+  <div class="text-center" id="top">
+    <img src="img/espacesensible-full.jpg" class="img-fluid p-0" alt="">
   </div>
 
-  <div class="" style="height: 15vh;"></div>
+  <div class="container my-4   bg-white">
+    <div class="row">
+      <div class="col-6">
+        <p class="m-0"><b>Espace sensible</b></p>
+        <ul>
+          <li>Installation</li>
+          <li>Mapping</li>
+          <li>Web/Imprimé</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <p> Travail sur le lien entre numérique et imprimé au travers dans une installaton inspirée du video mapping. Deux supports éditoriaux, un site web et trois affiches, qui sont normalement distincts, se supperposent et se complètent.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center text-black">
+    <img src="img/espacesensible2.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/espacesensible1.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/espacesensible3.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/espacesensible4.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/espacesensible5.jpg" class="img-fluid p-0 my-2" alt="">
+  </div>
 
-
-  <!-- Footer -->
-  <footer class="">
+  <footer>
     <div class="container mx-auto mt-2 p-0 text-center">
-      <h5>
+      <h5 class="text-black">
         <a class="" href="index.html">Accueil</a> |
         <a class="" href="contact.html">Contact</a> |
         <a class="" href="a-propos.html">A propos</a>
@@ -125,7 +122,10 @@
     </div>
   </footer>
 
+
+  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
 </body>
-<script src="js/marquee3k.js"></script>
 
 </html>
