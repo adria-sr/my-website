@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .label {
+      font-family: "IBM Plex Mono", Plex Mono, sans-serif;
+      font: "IBM Plex Mono", sans-serif;
+      pointer-events: none;
+      filter: invert();
+    }
+
+    text {
+      color: #FFFFFF;
+    }
+
+    .node {
+      stroke: #000;
+      stroke-width: 1.5px;
+
+    }
+
+    .link {
+      stroke: #999;
+      stroke-width: 1.5px;
+    }
+
+    body {
+      background-color: #111110;
+    }
+  </style>
+  <title>dSimon - Demo 2</title>
+</head>
+
+<body>
+  <svg width="1500" height="1000"></svg>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script>
+    var datajson = {
+      "nodes": [{
+          "id": "dSimon",
+          "group": 1,
+          "size": 6
+        },
+        {
+          "id": "Tammara Leites",
+          "group": 4,
+          "size": 4
+        },
+        {
+          "id": "Simon Senn",
+          "group": 7,
+          "size": 4
+        },
+        {
+          "id": "Dates",
+          "group": 10,
+          "size": 4
+        },
+        {
+          "id": "Présentation",
+          "group": 15,
+          "size": 4
+        },
+        {
+          "id": "Intelligence Artificielle",
+          "group": 19,
+          "size": 4
+        },
+        {
+          "id": "Tammara Leites, designeuse informatique, s’intéresse à GPT, l’intelligence artificielle la plus puissante du monde à ce jour. Cherchant à donner une identité à son adaptation de GPT, elle propose à Simon Senn d’en être le modèle. Celui-ci accepte que l’IA lise l’ensemble de ses données numériques, et ainsi naît dSimon. Il prendra la forme d’un site web interactif, permettant d’échanger avec lui, et d’une app de smartphone. Mais dSimon va bientôt avoir des comportements surprenants vis-à-vis des visiteurs·ses du site ou de Simon Senn, qui utilise l’app. dSimon finit par avoir une influence inattendue sur son modèle humain, en même temps qu’il produit bientôt des textes inadmissibles adressés à ses interlocuteur·rice·s en ligne. Est-ce parce que dSimon est doué de langage qu’il est si troublant, si… humain ? Qui le maîtrise ? Que dit la loi – ou l’éthique, ou… son créateur, OpenAI – sur ce que dSimon produit ? Sur scène, Tammara Leites, Simon Senn – et dSimon – témoignent de ce que leur a fait traverser ce projet, d’un point de vue personnel, émotionnel, intellectuel, artistique, peut-être politique, éthique et futuriste aussi. À la manière de Be Arielle F, le premier projet de Simon Senn pour la scène, ils font ensemble le récit de cette histoire en même temps qu’ils présentent dSimon qui luimême produit des textes pour le spectacle et réagit au récit de ses deux animateurs.pal Component Analysis",
+          "group": 14,
+          "size": 2
+        },
+        {
+          "id": "« Ensemble de théories et de techniques mises en œuvre en vue de réaliser des machines capables de simuler l'intelligence humaine.» (Larousse)",
+          "group": 18,
+          "size": 2
+        },
+        {
+          "id": "Durée 70min",
+          "group": 10,
+          "size": 2
+        },
+        {
+          "id": "sam 04.12 	18h00 		→ réserver",
+          "group": 10,
+          "size": 2
+        },
+        {
+          "id": "Tammara Leites est née et a grandi en Uruguay et vit actuellement à Genève. Depuis toujours, elle se passionne pour la technologie et la façon dont la société interagit avec elle. Après un cursus en programmation, design graphique et communication visuelle, et afin de concevoir des projets qui lui permettent d’allier ses centres d’intérêt à sa créativité, elle a décidé d’entreprendre un Master en Media Design à la Haute école d’art et de design de Genève. Parallèlement, elle rejoint Transmii Studio en tant que directrice des nouvelles technologie. Son travail prend la forme d’une réflexion sur ce que signifie être un humain connecté au jour le jour.",
+          "group": 3,
+          "size": 2
+        },
+        {
+          "id": "Simon Senn est né en 1986 et vit à Genève. Il a obtenu un Bachelor of Fine Arts à la Haute école d’art et de design de Genève et un Master au Goldsmiths College à Londres. Au premier abord, son travail semble suggérer qu’il est un artiste socialement engagé, s’élevant contre un certain type d’injustice. Pourtant, ses oeuvres explorent des paradoxes plutôt qu’articulent des critiques adressées.Même si ses vidéos ou installations sont normalement basées sur une certaine réalité, une fiction s’ y mêle souvent. Be Arielle F est sa première proposition pour la scène.Pendant la crise sanitaire de 2020, une version live stream et adaptée du spectacle a été créée.",
+          "group": 6,
+          "size": 2
+        },
+
+      ],
+      "links": [{
+          "source": "dSimon",
+          "target": "Tammara Leites"
+        },
+        {
+          "source": "Tammara Leites",
+          "target": "Simon Senn"
+        },
+        {
+          "source": "dSimon",
+          "target": "Dates"
+        },
+        {
+          "source": "dSimon",
+          "target": "Simon Senn"
+        },
+        {
+          "source": "dSimon",
+          "target": "Dates"
+        },
+        {
+          "source": "dSimon",
+          "target": "Présentation"
+        },
+        {
+          "source": "dSimon",
+          "target": "Intelligence Artificielle"
+        },
+        {
+          "source": "Présentation",
+          "target": "Tammara Leites, designeuse informatique, s’intéresse à GPT, l’intelligence artificielle la plus puissante du monde à ce jour. Cherchant à donner une identité à son adaptation de GPT, elle propose à Simon Senn d’en être le modèle. Celui-ci accepte que l’IA lise l’ensemble de ses données numériques, et ainsi naît dSimon. Il prendra la forme d’un site web interactif, permettant d’échanger avec lui, et d’une app de smartphone. Mais dSimon va bientôt avoir des comportements surprenants vis-à-vis des visiteurs·ses du site ou de Simon Senn, qui utilise l’app. dSimon finit par avoir une influence inattendue sur son modèle humain, en même temps qu’il produit bientôt des textes inadmissibles adressés à ses interlocuteur·rice·s en ligne. Est-ce parce que dSimon est doué de langage qu’il est si troublant, si… humain ? Qui le maîtrise ? Que dit la loi – ou l’éthique, ou… son créateur, OpenAI – sur ce que dSimon produit ? Sur scène, Tammara Leites, Simon Senn – et dSimon – témoignent de ce que leur a fait traverser ce projet, d’un point de vue personnel, émotionnel, intellectuel, artistique, peut-être politique, éthique et futuriste aussi. À la manière de Be Arielle F, le premier projet de Simon Senn pour la scène, ils font ensemble le récit de cette histoire en même temps qu’ils présentent dSimon qui luimême produit des textes pour le spectacle et réagit au récit de ses deux animateurs.pal Component Analysis"
+        },
+        {
+          "source": "Intelligence Artificielle",
+          "target": "« Ensemble de théories et de techniques mises en œuvre en vue de réaliser des machines capables de simuler l'intelligence humaine.» (Larousse)"
+        },
+        {
+          "source": "Dates",
+          "target": "Durée 70min"
+        },
+        {
+          "source": "Dates",
+          "target": "sam 04.12 	18h00 		→ réserver"
+        },
+        {
+          "source": "Tammara Leites",
+          "target": "Tammara Leites est née et a grandi en Uruguay et vit actuellement à Genève. Depuis toujours, elle se passionne pour la technologie et la façon dont la société interagit avec elle. Après un cursus en programmation, design graphique et communication visuelle, et afin de concevoir des projets qui lui permettent d’allier ses centres d’intérêt à sa créativité, elle a décidé d’entreprendre un Master en Media Design à la Haute école d’art et de design de Genève. Parallèlement, elle rejoint Transmii Studio en tant que directrice des nouvelles technologie. Son travail prend la forme d’une réflexion sur ce que signifie être un humain connecté au jour le jour."
+        },
+        {
+          "source": "Simon Senn",
+          "target": "Simon Senn est né en 1986 et vit à Genève. Il a obtenu un Bachelor of Fine Arts à la Haute école d’art et de design de Genève et un Master au Goldsmiths College à Londres. Au premier abord, son travail semble suggérer qu’il est un artiste socialement engagé, s’élevant contre un certain type d’injustice. Pourtant, ses oeuvres explorent des paradoxes plutôt qu’articulent des critiques adressées.Même si ses vidéos ou installations sont normalement basées sur une certaine réalité, une fiction s’ y mêle souvent. Be Arielle F est sa première proposition pour la scène.Pendant la crise sanitaire de 2020, une version live stream et adaptée du spectacle a été créée."
+        },
+      ]
+    }
+
+    var svg = d3.select("svg"),
+      width = +svg.attr("width"),
+      height = +svg.attr("height");
+
+    //TODO make svg responsive
+    d3.select("div#chartId")
+      .append("div")
+      .classed("svg-container", true) //container class to make  responsive svg
+      .append("svg")
+      //responsive SVG needs these 2 attributes and no width and height attr
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 600 400")
+      //class to make it responsive
+      .classed("svg-content-responsive", true);
+
+
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
+    var nodeRadius = 30;
+
+    var simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) {
+        return d.id;
+      }).distance(80))
+      .force("charge", d3.forceManyBody().strength(-1000))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("collide", d3.forceCollide().radius(function(d) {
+        return nodeRadius + 5;
+      }).iterations(2))
+
+    simulation.nodes(datajson.nodes);
+    simulation.force("link").links(datajson.links);
+
+    var link = svg.append("g")
+      .attr("class", "link")
+      .selectAll("line")
+      .data(datajson.links)
+      .enter().append("line");
+
+    var node = svg.append("g")
+      .attr("class", "nodes")
+      .selectAll("circle")
+      .data(datajson.nodes)
+      .enter().append("circle")
+
+      //Setting node radius by group value. If 'group' key doesn't exist, set radius to 9
+      .attr("r", function(d) {
+        if (d.hasOwnProperty('group')) {
+          return d.size * 2;
+        } else {
+          return 9;
+        }
+      })
+      //Colors by 'group' value
+      .style("fill", function(d) {
+        return color(d.group);
+      })
+      .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+    node.append("svg:title")
+      .attr("dx", -80)
+      .attr("dy", ".5em")
+      .text(function(d) {
+        return d.id
+      });
+
+    var labels = svg.append("g")
+      .attr("class", "label")
+      .selectAll("text")
+      .data(datajson.nodes)
+      .enter().append("text")
+      .attr("dx", 12)
+      .attr("dy", ".5em")
+      .style("font-size", 13)
+      .each(function(d) {
+        var arr = d.id.split(" ");
+        for (i = 0; i < arr.length; i++) {
+          d3.select(this).append("tspan")
+            .text(arr[i])
+            .attr("dy", i ? "1.2em" : 0)
+            .attr("x", 0)
+            .attr("text-anchor", "middle")
+            .attr("class", "tspan" + i);
+        }
+      })
+      .text(function(d) {
+        return d.id
+      });
+
+
+    simulation
+      .nodes(datajson.nodes)
+      .on("tick", ticked);
+
+    simulation.force("link")
+      .links(datajson.links);
+
+    function ticked() {
+
+      link.attr("x1", function(d) {
+          return d.source.x;
+        })
+        .attr("y1", function(d) {
+          return d.source.y;
+        })
+        .attr("x2", function(d) {
+          return d.target.x;
+        })
+        .attr("y2", function(d) {
+          return d.target.y;
+        });
+
+      node
+        .attr("cx", function(d) {
+          return d.x;
+        })
+        .attr("cy", function(d) {
+          return d.y;
+        });
+      labels
+        .attr("x", function(d) {
+          return d.x;
+        })
+        .attr("y", function(d) {
+          return d.y;
+        });
+    }
+
+    function dragstarted(d) {
+      if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(d) {
+      d.fx = d3.event.x;
+      d.fy = d3.event.y;
+    }
+
+    function dragended(d) {
+      if (!d3.event.active) simulation.alphaTarget(0.5);
+      d.fx = null;
+      d.fy = null;
+    }
+  </script>
+</body>

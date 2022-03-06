@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>dSimon - Demo 1</title>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+    $(function() {
+      $("#draggable").draggable();
+    });
+
+    /*function IntelligenceArtificielle() {
+      const image = document.getElementById('image-map')
+      image.style.top: -400;
+      image.style.left: -300;*/
+
+
+    $(document).ready(function() {
+
+      $("#ia").click(function() {
+        $("#draggable").animate({
+          left: "-400px",
+          top: "-300px"
+
+        }, 1000, function() {});
+
+
+        /*  const image = document.getElementById('draggable')
+          image.style.top = "-400px";
+          image.style.left = "-300px";*/
+      })
+
+      $("#tl").click(function() {
+        /*    $("#draggable").animate({
+          top: "-450px");
+          left: "-2350");
+        }, 1000, function() {});
+*/
+        const image = document.getElementById('draggable')
+        image.style.top = "0px";
+        image.style.left = "-2350px";
+      })
+
+      $("#ss").click(function() {
+        const image = document.getElementById('draggable')
+        image.style.top = "-450px";
+        image.style.left = "-3200px";
+      })
+
+      $("#presentation").click(function() {
+        const image = document.getElementById('draggable')
+        image.style.top = "-1300px";
+        image.style.left = "-4350px";
+      })
+
+      $("#dates").click(function() {
+        const image = document.getElementById('draggable')
+        image.style.top = "-700px";
+        image.style.left = "-2500px";
+      })
+
+      $("#revue").click(function() {
+        const image = document.getElementById('draggable')
+        image.style.top = "-2600px";
+        image.style.left = "-3200px";
+      })
+
+      $("#gpt").click(function() {
+        const image = document.getElementById('draggable')
+        image.style.top = "-400px";
+        image.style.left = "-300px";
+      })
+
+
+    });
+  </script>
+</head>
+
+<body style="background-color: #111110;">
+  <img src="img/dsimonimage.png" id="draggable" usemap="#image-map" style="position: absolute; top: -700px;
+    left: -1750px; cursor: grab;">
+  <map name="image-map">
+    <area target="" id="ia" alt="Intelligence artificielle" title="Intelligence artificielle" onclick="" href="#" coords="2218,963,1742,885" shape="rect">
+    <area target="" id="tl" alt="Tammara Leites" title="Tammara Leites" href="#" coords="2446,849,2746,937" shape="rect">
+    <area target="" id="ss" alt="Simon Senn" title="Simon Senn" href="#" coords="3026,1004,3248,1092" shape="rect">
+    <area target="" id="presentation" alt="Présentation" title="Présentation" href="#" coords="2653,1336,2902,1398" shape="rect">
+    <area target="" id="dates" alt="Dates" title="Dates" href="#" coords="2498,1657,2648,1709" shape="rect">
+    <area target="" id="revue" alt="Revue de presse" title="Revue de presse" href="#" coords="3026,1486,3357,1543" shape="rect">
+    <area target="" id="gpt" alt="GPT" title="GPT" href="#" coords="1214,1828,1354,1905" shape="rect">
+  </map>
+</body>
+
+</html>
