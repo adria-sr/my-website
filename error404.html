@@ -37,71 +37,67 @@
 <body class="bg-black">
 
   <!-- Header -->
-  <div class="container-fluid m-0 p-0" style="">
-    <header class="mb text-white">
-      <div class="container-fluid m-0 p-0">
-        <div class="" style="">
-          <div class="marquee3k" data-speed="2" data-reverse="false" data-pausable="yes">
-            <!--you can even have inline images,
-          or any kind of html -->
-            <h3> <i>page not found</i> </h3>
+  <header class="text-white bg-black fixed-top">
+    <nav class="navbar ms-4">
+      <div class="container-fluid ms-1">
+        <div class="d-flex">
+          <a href="index.html" class="navbar-brand my-auto"> Adrià Soubias Rabassa</a>
+        </div>
+        <div class="d-flex flex-row-reverse nav-item">
+          <svg onclick="openNav()" class="svg-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <div class="row g-0">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-auto">
+          <div class="m-3">
+            <h1 class="menu"><a href="a-propos.html"><i>Accueil</i></a></h1>
+            <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
+            <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
+          </div>
+          <div class="m-3">
+            <h5><a href="contact.html"><i>Mentions légales</i></a></h5>
+            <h5><a href="archive.html"><i>Archives</i></a></h5>
+          </div>
+          <div class="m-3" style="position: fixed; bottom: 0px;">
+            <p class="jost">© Adrià SOUBIAS RABASSA</p>
           </div>
         </div>
-
-
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-
-          <!-- Button to close the overlay navigation -->
-          <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
-
-          <!-- Overlay content -->
-          <div class="overlay-content">
-            <div class="row g-0">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-auto">
-                <div class="m-4">
-                  <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
-                  <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
-                  <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
-                </div>
-                <div class="m-4">
-                  <h5><a href="contact.html#mentions-legales"><i>Mentions légales</i></a></h5>
-                  <h5><a href="archive.html"><i>Archives</i></a></h5>
-                </div>
-                <div class="m-4" style="position: fixed; bottom: 0px;">
-                  <p class="jost">© Adrià SOUBIAS RABASSA</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <img onclick="openNav()" class="img-fluid menu-icon position-absolute top-0 end-0 m-3 menu-icon" src="img/menu-icon.png" alt="Icone du menu">
       </div>
-    </header>
-
-
-    <main>
-      <div class="mt-4">
-        <a href="index.html">
-          <h1 class="huge">404</h1>
-        </a>
-      </div>
-    </main>
-
-    <div class="">
-
     </div>
+  </div>
 
-    <div class="container text-center text-white">
-      <p>Pas de panique, vous pouvez <a href="index.html"><i>retourner à l'accueil</i> </a></p>
 
+  <main>
+    <div class="mt-4 pt-4 text-center">
+      <a href="index.html">
+        <h1 class="huge-error">404</h1>
+      </a>
     </div>
+  </main>
+
+  <div class="">
+
+  </div>
+
+  <div class="container text-center text-white">
+    <p>Pas de panique, vous pouvez <a href="index.html"><i>retourner à l'accueil</i> </a></p>
+
+  </div>
 
 </body>
 <script src="js/marquee3k.js"></script>

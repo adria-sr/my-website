@@ -169,8 +169,16 @@ svg:hover {
   animation: changeTypoHuge infinite 1s;
 }
 
-.huge:hover {
+.huge:hover .huge-error:hover {
   color: #FFFFFFFF;
+}
+
+.huge-error {
+  color: var(--tonique);
+  font-family: 'Avara_Black';
+  font-size: 35vw;
+  cursor: pointer;
+  animation: changeTypoHuge infinite 1s;
 }
 
 @keyframes changeTypoHuge {
