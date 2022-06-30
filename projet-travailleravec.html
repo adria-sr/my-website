@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Adrià Soubias Rabassa">
+  <title>Travailler Avec</title>
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="img\favicon180.png" sizes="180x180">
+  <link rel="icon" href="img\favicon32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img\favicon16.png" sizes="16x16" type="image/png">
+
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+  </style>
+
+  <!-- Bootstrap CDN CSS+JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/ibm-plex.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/global.css">
+
+
+  <!-- JS -->
+  <script src="js/global.js"></script>
+</head>
+
+<body class="w-100 bg-white">
+
+
+  <!-- Header -->
+  <header class="bg-white fixed-top">
+    <nav class="navbar ms-4">
+      <div class="container-fluid ms-1">
+        <div class="d-flex">
+          <a href="index.html" class="navbar-brand my-auto"> Adrià Soubias Rabassa</a>
+        </div>
+        <div class="d-flex flex-row-reverse nav-item">
+          <svg onclick="openNav()" style="" class="svg-menu-black" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></h1>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <div class="row g-0">
+        <div class="col-2">
+        </div>
+        <div class="col-auto">
+          <div class="m-2">
+            <h1 class="menu"><a href="index.html"><i>Accueil</i></a></h1>
+            <h1 class="menu"><a href="a-propos.html"><i>A propos</i></a></h1>
+            <h1 class="menu"><a href="contact.html"><i>Contact</i></a></h1>
+          </div>
+          <div class="m-2">
+            <h5><a href="contact.html#mentions-legales"><i>Mentions légales</i></a></h5>
+            <h5><a href="archive.html"><i>Archives</i></a></h5>
+          </div>
+          <div class="m-4" style="position: fixed; top: 0px;">
+            <p class="jost">© Adrià SOUBIAS RABASSA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- /.header -->
+
+  <div class="text-center" id="top">
+    <img src="img/tee1.jpg" class="img-fluid p-0" alt="">
+  </div>
+
+  <div class="container my-4   bg-white">
+    <div class="row">
+      <div class="col-6">
+        <p class="m-0"><b>Travailler avec</b></p>
+        <ul>
+          <li>Communication</li>
+          <li>Photographie</li>
+          <li>Eau de javel</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <p> (dé)tacher un tee-shirt pour défendre une cause qui me tient à cœur : la relation du graphiste avec un client, un collaborateur.
+          Travailler <i>avec</i> c'est l'opposé de travailler pour.
+          <br> <a href="projet-teeshirt.html">Découvrir la page de présentation</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center text-black">
+    <img src="img/tee2.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/tee3.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/tee4.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/tee5.jpg" class="img-fluid p-0 my-2" alt="">
+    <img src="img/tee6.jpg" class="img-fluid p-0 my-2" alt="">
+  </div>
+
+  <div style="height: 50vh"> </div>
+
+  <!-- Footer -->
+  <footer class="text-black">
+    <div class="container-fluid mt-4 p-0">
+      <div class="marquee3k m-0 p-0" data-speed="3" data-reverse="false" data-pausable="yes">
+        <a href="index.html">
+          <h1 style="font-size: 12em;"><i>Accueil</i></h1>
+        </a>
+      </div>
+      <div class="marquee3k m-0 p-0" data-speed="1" data-pausable="yes">
+        <h1 style="font-size: 5em;" class=""><a href="contact.html">Contact</a></h1>
+      </div>
+      <div class="marquee3k m-0 p-0" data-speed="1.5" data-pausable="yes">
+        <h1><a href="a-propos.html"><i>à propos</i></a></h1>
+      </div>
+      <div style="height: 5vh;"></div>
+      <div class="marquee3k m-0 p-0" data-speed="0.2" data-reverse="false" data-pausable="yes">
+        <p> <a href="https://github.com/adria-sr">
+            <>
+          </a> by adrià soubias rabassa. Ce site web est composé en <a href="https://www.velvetyne.fr/fonts/avara/">Avara</a>, dessinée
+          par Raphaël Bastide + Lucas Le Bihan + Wei Huang + Walid Bouchouchi ainsi qu'en <a href="https://www.ibm.com/plex/"><b class="jost">IBM Plex</b></a> dessinée par la team d'IBM Design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/marquee3k.js"></script>
+
+
+
+</body>
+
+</html>
