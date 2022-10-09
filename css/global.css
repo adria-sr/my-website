@@ -6,7 +6,7 @@
  * 2021
  */
 :root {
-  --tonique: #ffe400;
+  --tonique: #FF4A00;
   --micro: #00024c;
   --pakistani: #35963e;
   --muriers: #611747;
@@ -139,7 +139,7 @@ em, .tonique {
 }
 
 .huge-svg {
-  fill: var(--bs-white);
+  fill: var(--bs-black);
   max-width: 45vw;
   min-width: 24vw;
   transition: 0.2s;
@@ -147,7 +147,7 @@ em, .tonique {
 }
 
 .svg-menu, .svg-menu-black {
-  fill: var(--bs-white);
+  fill: var(--bs-black);
   transition: 0.2s;
   margin: 0.5vw;
   cursor: pointer;
@@ -157,12 +157,16 @@ em, .tonique {
   fill: var(--bs-black);
 }
 
+.svg-white {
+  fill: var(--bs-white);
+}
+
 svg:hover {
   fill: var(--tonique)
 }
 
 .huge {
-  color: var(--tonique);
+  color: var(--bs-black);
   font-family: 'Avara_Black';
   font-size: 47vw;
   cursor: pointer;
@@ -170,7 +174,7 @@ svg:hover {
 }
 
 .huge:hover .huge-error:hover {
-  color: #FFFFFFFF;
+  color: var(--tonique);
 }
 
 .huge-error {
