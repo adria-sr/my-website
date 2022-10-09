@@ -139,7 +139,7 @@ em, .tonique {
 }
 
 .huge-svg {
-  fill: var(--bs-white);
+  fill: var(--bs-black);
   max-width: 45vw;
   min-width: 24vw;
   transition: 0.2s;
