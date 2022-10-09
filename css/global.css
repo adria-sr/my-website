@@ -157,6 +157,10 @@ em, .tonique {
   fill: var(--bs-black);
 }
 
+.svg-white {
+  fill: var(--bs-white);
+}
+
 svg:hover {
   fill: var(--tonique)
 }
