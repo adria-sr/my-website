@@ -147,7 +147,7 @@ em, .tonique {
 }
 
 .svg-menu, .svg-menu-black {
-  fill: var(--bs-white);
+  fill: var(--bs-black);
   transition: 0.2s;
   margin: 0.5vw;
   cursor: pointer;
@@ -162,7 +162,7 @@ svg:hover {
 }
 
 .huge {
-  color: var(--tonique);
+  color: var(--bs-black);
   font-family: 'Avara_Black';
   font-size: 47vw;
   cursor: pointer;
@@ -170,7 +170,7 @@ svg:hover {
 }
 
 .huge:hover .huge-error:hover {
-  color: #FFFFFFFF;
+  color: var(--tonique);
 }
 
 .huge-error {
