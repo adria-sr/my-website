@@ -9,8 +9,10 @@
   --tonique: #FF4A00;
 }
 
-h1 {
+h1, h2 {
   font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 h2 {}
@@ -22,28 +24,14 @@ h4 {}
 p {
   font-family: sans-serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: 300;
-}
-
-h2, h2 a, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
 }
 
 i {
   font-family: 'IBM Plex Sans', sans-serif;
   font-style: italic;
   font-weight: 300;
-}
-
-h1 i, h1 a, .avara-italic {
-  font-family: "Avara_Bold Italic", Georgia, serif;
-}
-
-.avara-black {
-  font-family: "Avara_Black", Georgia, serif;
 }
 
 b {
@@ -66,29 +54,8 @@ ul, li {
   padding-left: 3px;
 }
 
-b.jost {
-  font-family: 'Jost', monospace;
-  font-weight: 700;
-}
-
 .justified {
   text-align: justify;
-}
-
-.micro {
-  color: var(--micro);
-}
-
-em, .tonique {
-  color: var(--tonique);
-}
-
-.huge-svg {
-  fill: var(--bs-black);
-  max-width: 45vw;
-  min-width: 24vw;
-  transition: 0.2s;
-  margin: 0.5vw;
 }
 
 .svg-menu, .svg-menu-black {
@@ -312,36 +279,18 @@ a:hover {
 .thumbnail {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale();
+  filter: none;
   background-size: cover;
-  height: 60vh;
+  height: 75vh;
   cursor: pointer;
   transition: all 0.5s;
+  margin-bottom: 5vh;
 }
 
 .thumbnail:hover {
-  filter: none;
-}
-
-.thumbnail-disabled {
-  position: relative;
-  overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  cursor: not-allowed;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-.thumbnail-text {
-  font-size: calc(1.375rem + 23vw);
-  font-family: "Avara_Black", serif;
+  filter: grayscale();
 }
 
 .link-spanner {
