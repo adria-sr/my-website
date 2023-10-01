@@ -2,25 +2,81 @@
 
 /*
  * <> by Adrià SOUBIAS RABASSA,
- * Libre à vous de vous inspirer de mon code
- * 2023
+ * Tout droits réservés
+ * 2021
  */
 :root {
   --tonique: #FF4A00;
+  --micro: #00024c;
+  --pakistani: #35963e;
+  --muriers: #611747;
 }
 
-h1 {
-  font-family: sans-serif;
+@font-face {
+  font-family: 'Avara_Bold';
+  src: url('font/avara/bold/Avara-Bold.eot');
+  src: url('font/avara/bold/Avara-Bold.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/bold/Avara-Bold.woff') format('woff'),
+    url('font/avara/bold/Avara-Bold.woff2') format('woff2'),
+    url('font/avara/bold/Avara-Bold.ttf') format('truetype'),
+    url('font/avara/bold/Avara-Bold.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-h2 {}
+@font-face {
+  font-family: 'Avara_Bold Italic';
+  src: url('font/avara/bolditalic/Avara-Bold_Italic.eot');
+  src: url('font/avara/bolditalic/Avara-Bold_Italic.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/bolditalic/Avara-BoldItalic.woff') format('woff'),
+    url('font/avara/bolditalic/Avara-BoldItalic.woff2') format('woff2'),
+    url('font/avara/bolditalic/Avara-BoldItalic.ttf') format('truetype'),
+    url('font/avara/bolditalic/Avara-BoldItalic.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
 
-h3 {}
+@font-face {
+  font-family: 'Avara_Black';
+  src: url('font/avara/black/Avara-Black.eot');
+  src: url('font/avara/black/Avara-Black.eot?#iefix') format('embedded-opentype'),
+    url('font/avara/black/Avara-Black.woff') format('woff'),
+    url('font/avara/black/Avara-Black.woff2') format('woff2'),
+    url('font/avara/black/Avara-Black.ttf') format('truetype'),
+    url('font/avara/black/Avara-Black.svg#svgFontName') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}
 
-h4 {}
+/*@font-face {
+  font-family: 'Redaction_Regular';
+  src: url('font/redaction/normal/Redaction-Regular.otf') format('opentype'),
+    url('font/redaction/normal/Redaction-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-p {
-  font-family: sans-serif;
+@font-face {
+  font-family: 'Redaction_Italic';
+  src: url('font/redaction/normal/Redaction-Italic.otf') format('opentype'),
+    url('font/redaction/normal/Redaction-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_Bold';
+  src: url('font/redaction/normal/Redaction-Bold.otf') format('opentype'),
+    url('font/redaction/normal/Redaction-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}*/
+h1, a, .avara {
+  font-family: "Avara_Black", Georgia, serif;
+}
+
+p, .plex {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
 }
