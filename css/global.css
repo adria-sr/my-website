@@ -144,10 +144,6 @@ a:hover {
   margin-bottom: 5vh;
 }
 
-.thumbnail:hover {
-  filter: grayscale();
-}
-
 .link-spanner {
   position: absolute;
   width: 100%;
