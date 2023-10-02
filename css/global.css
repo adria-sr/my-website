@@ -56,7 +56,7 @@ body {
 }
 
 h1, h2 {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 800;
 }
 
@@ -64,7 +64,9 @@ h2 {}
 
 h3 {}
 
-h4 {}
+h4 {
+  font-size: 23px;
+}
 
 p {
   font-style: normal;
