@@ -6,7 +6,7 @@
  * 2023
  */
 :root {
-  --tonique: #FF4A00;
+  --tonique: #0D0539;
 }
 
 /**
@@ -47,6 +47,10 @@
   font-style: italic;
 }
 
+.bg-tonique {
+  background-color: var(--tonique);
+}
+
 body {
   font-family: 'FamiljenGrotesk-Variable', sans-serif;
 }
@@ -54,7 +58,6 @@ body {
 h1, h2 {
   font-size: 20px;
   font-weight: 800;
-  color: black;
 }
 
 h2 {}
@@ -85,8 +88,6 @@ header {
 }
 
 ul, li {
-  font-family: sans-serif;
-  font-style: italic;
   font-weight: 300;
   list-style-type: none;
   margin: 0;
@@ -170,6 +171,16 @@ a:hover {
   color: var(--tonique);
 }
 
+.projet {
+  background-color: white;
+}
+
+.projet:hover {
+  background-color: var(--tonique);
+  transition: 0.2s;
+  color: white;
+}
+
 .thumbnail {
   position: relative;
   overflow: hidden;
@@ -177,10 +188,11 @@ a:hover {
   background-repeat: no-repeat;
   filter: none;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
   cursor: pointer;
   transition: all 0.5s;
-  margin-bottom: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 
 .link-spanner {
