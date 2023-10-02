@@ -55,12 +55,14 @@ body {
   font-family: 'FamiljenGrotesk-Variable', sans-serif;
 }
 
-h1, h2 {
+h1 {
+  font-size: 80vh;
+}
+
+h2 {
   font-size: 23px;
   font-weight: 800;
 }
-
-h2 {}
 
 h3 {}
 
@@ -100,61 +102,25 @@ ul, li {
   text-align: justify;
 }
 
-.svg-menu, .svg-menu-black {
-  fill: var(--bs-black);
-  transition: 0.2s;
-  margin: 0.5vw;
-  cursor: pointer;
+.landing {
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: landingImg infinite 5s;
+  background-image: url(img\20220525_183430.jpg);
 }
 
-.svg-menu-black {
-  fill: var(--bs-black);
-}
-
-.svg-white {
-  fill: var(--bs-white);
-}
-
-svg:hover {
-  fill: var(--tonique)
-}
-
-.huge {
-  color: var(--bs-black);
-  font-family: 'Avara_Black';
-  font-size: 47vw;
-  cursor: pointer;
-  animation: changeTypoHuge infinite 1s;
-}
-
-.huge:hover .huge-error:hover {
-  color: var(--tonique);
-}
-
-.huge-error {
-  color: var(--tonique);
-  font-family: 'Avara_Black';
-  font-size: 35vw;
-  cursor: pointer;
-  animation: changeTypoHuge infinite 1s;
-}
-
-@keyframes changeTypoHuge {
+@keyframes landingImg {
   0% {
-    font-family: 'Avara_Black';
+    background-image: url(img\memoire1.jpg);
   }
 
-  33% {
-    font-family: 'Avara_Bold';
+  50% {
+    background-image: url(img\20220525_183430.jpg);
   }
 
-  66% {
-    font-family: 'Avara_Bold Italic';
+  100% {
+    background-image: url(img\memoire1.jpg);
   }
-}
-
-.menu {
-  font-size: calc(1.375rem + 6.5vw);
 }
 
 .center {
@@ -197,6 +163,11 @@ a:hover {
   margin-bottom: 1vh;
 }
 
+.navbar {
+  background-color: var(--tonique);
+  color: white;
+}
+
 .link-spanner {
   position: absolute;
   width: 100%;
@@ -208,69 +179,3 @@ a:hover {
      make sure you have an empty gif
   background-image: url('empty.gif');*/
 }
-
-/* OVERLAY MENU ZONE*/
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed;
-  /* Stay in place */
-  z-index: 2000;
-  /* Sit on top */
-  right: 0;
-  top: 0;
-  background-color: rgb(0, 0, 0);
-  /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/opacity */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 10%;
-  /* 25% from the top */
-  width: 100%;
-  /* 100% width */
-  text-align: left;
-  /* Centered text/links */
-  margin-top: 30px;
-  /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  color: var(--bs-white);
-  display: block;
-  /* Display block instead of inline */
-  transition: 0.3s;
-  /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: var(--tonique);
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-}
-
-.overlay .closebtn {
-  top: 15px;
-  right: 35px;
-}
-}
-
-/*END OF OVERLAY MENU ZONE*/
