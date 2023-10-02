@@ -103,23 +103,60 @@ ul, li {
 }
 
 .landing {
+  position: relative;
+  overflow: hidden;
+  background-position: center;
   background-repeat: no-repeat;
+  filter: none;
   background-size: contain;
   animation: landingImg infinite 5s;
-  background-image: url(img\20220525_183430.jpg);
+  background-image: url(..\img\20220525_183430.jpg);
+  height: 87vh;
 }
 
 @keyframes landingImg {
   0% {
-    background-image: url(img\memoire1.jpg);
+    background-image: url(../img/memoire1.jpg);
+  }
+
+  10% {
+    background-image: url(../img/DSCF7353.jpg);
+  }
+
+  20% {
+    background-image: url(../img/DSC00135.jpg);
+  }
+
+  30% {
+    background-image: url(../img/neg014.jpg);
+  }
+
+  40% {
+    background-image: url(../img/DSCF6391.jpg);
   }
 
   50% {
-    background-image: url(img\20220525_183430.jpg);
+    background-image: url(../img/DSC00221.jpg);
+  }
+
+  60% {
+    background-image: url(../img/DSCF6368jpg);
+  }
+
+  70% {
+    background-image: url(../img/DSCF7485.jpg);
+  }
+
+  80% {
+    background-image: url(../img/mockup2.jpg);
+  }
+
+  90% {
+    background-image: url(../img/pellicule7004.jpg);
   }
 
   100% {
-    background-image: url(img\memoire1.jpg);
+    background-image: url(../img/memoire1.jpg);
   }
 }
 
