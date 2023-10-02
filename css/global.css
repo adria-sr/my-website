@@ -52,7 +52,7 @@ body {
 }
 
 h1, h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
   color: black;
 }
@@ -180,7 +180,7 @@ a:hover {
   height: 75vh;
   cursor: pointer;
   transition: all 0.5s;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .link-spanner {
