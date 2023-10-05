@@ -56,15 +56,18 @@ body {
 }
 
 h1 {
-  font-size: 60vh;
+  font-size: 35px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 23px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
-h3 {}
+h3 {
+  font-size: 23px;
+}
 
 h4 {
   font-size: 23px;
@@ -116,7 +119,7 @@ ul, li {
 
 @keyframes landingImg {
   0% {
-    background-image: url(../img/memoire1.jpg);
+    background-image: url(../img/memoire-1.jpg);
   }
 
   10% {
@@ -124,7 +127,7 @@ ul, li {
   }
 
   20% {
-    background-image: url(../img/DSC00135.jpg);
+    background-image: url(../img/voeux-4.jpg);
   }
 
   30% {
@@ -136,7 +139,7 @@ ul, li {
   }
 
   50% {
-    background-image: url(../img/DSC00221.jpg);
+    background-image: url(../img/dalquier-1.jpg);
   }
 
   60% {
@@ -156,7 +159,7 @@ ul, li {
   }
 
   100% {
-    background-image: url(../img/memoire1.jpg);
+    background-image: url(../img/memoire-1.jpg);
   }
 }
 
@@ -178,6 +181,7 @@ a:hover {
 
 .projet {
   background-color: white;
+  margin-bottom: 5vh;
 }
 
 .projet:hover {
@@ -193,10 +197,9 @@ a:hover {
   background-repeat: no-repeat;
   filter: none;
   background-size: cover;
-  height: 80vh;
+  height: 75vh;
   cursor: pointer;
   transition: all 0.5s;
-  margin-top: 2vh;
   margin-bottom: 1vh;
 }
 
