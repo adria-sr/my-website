@@ -11,4 +11,4 @@ ExpiresDefault A300
 ExpiresByType text/css A3600
 
 
-ErrorDocument 404 /error404.html 
+ErrorDocument 404 /error404.php 
