@@ -229,7 +229,7 @@
 
         </h2>
       </div>
-      <div class="col-md-6 ms-4">
+      <div class="col-md-6">
         <ul>
           <li> <a href="https://instagram.com/adria_sr"><i class="bi bi-instagram"></i> <i>Instagram</i></a></li>
           <li> <a href="https://www.linkedin.com/in/adria-soubias/"><i class="bi bi-linkedin"></i> <i>Linkedin</i></a></li>
