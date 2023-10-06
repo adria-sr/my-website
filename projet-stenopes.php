@@ -13,7 +13,7 @@
           Expérimentations sténopéïques à l'aide d'une machine cylindrique percée en trois points, ce dispositif permet place le support photosensible dans un volume cylindrique. Loin de la planéïtude des capteurs numériques ou de nos écrans de cameraphone, ce procédé remet en question la planéité des images de notre quoditien et interroge le support de l'image.
         </h2>
       </div>
-      <div class="col-md-6 ms-4">
+      <div class="col-md-6">
         <ul>
           <li>2023</li>
           <li>Argentique</li>
@@ -29,32 +29,32 @@
 </div>
 
 <div class="container-fluid p-4">
-  <div class="row g-0">
-    <div class="col-md-4 mb-4">
+  <div class="row g-0 my-0">
+    <div class="col-lg-4">
     </div>
-    <div class="col-md mb-4">
+    <div class="col-lg mb-4">
       <img class="img-fluid" src="img\stenopes-1.jpg" alt="">
     </div>
   </div>
-  <div class="row g-0">
-    <div class="col-md-4 mb-4">
+  <div class="row g-0 my-0">
+    <div class="col-lg-4 mb-4">
       <img class="img-fluid" src="img\stenopes-2.jpg" alt="">
     </div>
-    <div class="col-md mb-4">
+    <div class="col-lg">
     </div>
       </div>
-    <div class="row g-0">
-      <div class="col-md-4 mb-4">
+    <div class="row g-0 my-0">
+      <div class="col-lg-4">
       </div>
-      <div class="col-md mb-4">
+      <div class="col-lg mb-4">
         <img class="img-fluid" src="img\stenopes-4.jpg" alt="">
       </div>
         </div>
-      <div class="row g-0">
-        <div class="col-md-4 mb-4">
+      <div class="row g-0 my-0">
+        <div class="col-lg-4 mb-4">
           <img class="img-fluid" src="img\stenopes-3.jpg" alt="">
         </div>
-        <div class="col-md mb-4">
+        <div class="col-lg">
         </div>
         </div>
           </div>
