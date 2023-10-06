@@ -9,6 +9,7 @@
       <div class="col-lg-4 mb-4">
           <h1>Au fil du temps</h1>
         <h2>
+          Conception et gravure d'un cadran solaire à l'épreuve du temps pour le refuge de Rialp (1990m) en Andorre.
         </h2>
       </div>
       <div class="col-md-6 ms-4">
