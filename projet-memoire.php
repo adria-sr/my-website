@@ -1,6 +1,6 @@
 <?php echo file_get_contents("header.html"); ?>
 
-<div class="container-fluid" id="contact">
+<div class="container-fluid">
 
   <div class="container-fluid p-4">
 
