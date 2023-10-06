@@ -172,6 +172,27 @@
   <div class="container-fluid p-4 position-relative projet">
     <div class="row">
       <div class="col-md-4">
+        <h2><a href="projet-cadran.php">Au fil du temps</a></h2>
+      </div>
+      <div class="col-md-6">
+        <p>Conception et gravure d'un cadran solaire à l'épreuve du temps pour le refuge de Rialp (1990m) en Andorre.</p>
+      </div>
+    </div>
+    <div class="bg-image thumbnail" style="background-image: url(img/thumbnail-cadran.jpg);">
+      <a href="projet-stenopes.php">
+      <span class="link-spanner"></span>
+      </a>
+    </div>
+    <div class="position-relative end-0 p-1 text-end">
+      <?php $numero=$numero+1;
+      echo "<h4><b>$numero</b></h4>";
+       ?>
+    </div>
+  </div>
+
+  <div class="container-fluid p-4 position-relative projet">
+    <div class="row">
+      <div class="col-md-4">
         <h2><a href="projet-stenopes.php">Sténopés</a></h2>
       </div>
       <div class="col-md-6">
