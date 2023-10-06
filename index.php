@@ -135,7 +135,7 @@
         <p>Au centre de ma pratique, la photographie est à la fois une base à retravailler, à composer et à éditer ainsi qu'une façon de figer un regard sur le monde. Je photographie en argentique et en numérique.</p>
       </div>
     </div>
-    <div class="bg-image thumbnail" style="background-image: url(img/thumbnail-photo.JPG);">
+    <div class="bg-image thumbnail" style="background-image: url(img/thumbnail-photo.jpg);">
       <a href="projet-photographie.php">
       <span class="link-spanner"></span>
       </a>
