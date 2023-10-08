@@ -41,7 +41,7 @@
     </div>
       </div>
     <div class="row g-0">
-      <div class="col-lg-">
+      <div class="col-lg">
       </div>
       <div class="col-lg mb-4">
         <img class="img-fluid" src="img\horizon-1.jpg" alt="">
@@ -55,5 +55,6 @@
         </div>
         </div>
           </div>
+
 
 <?php echo file_get_contents("footer.html"); ?>

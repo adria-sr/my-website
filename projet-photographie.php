@@ -27,6 +27,8 @@ Au centre de ma pratique, la photographie est à la fois une base à retravaille
     <div class="col-lg-4 mb-4">
       <img class="img-fluid" src="img\photo-7.jpg" alt="">
     </div>
+    <div class="col-lg">
+    </div>
   </div>
   <div class="row g-0">
     <div class="col-lg-4">
@@ -45,9 +47,10 @@ Au centre de ma pratique, la photographie est à la fois une base à retravaille
       <div class="row g-0">
         <div class="col-lg-4 mb-4">
           <img class="img-fluid" src="img\photo-3.jpg" alt="">
+          <div class="col-lg">
+          </div>
         </div>
-        <div class="col-lg">
-        </div>
+
         </div>
         <div class="row g-0">
           <div class="col-lg-4 mb-4">

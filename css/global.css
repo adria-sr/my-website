@@ -112,7 +112,7 @@ ul, li {
   background-repeat: no-repeat;
   filter: none;
   background-size: contain;
-  animation: landingImg infinite 5s;
+  animation: landingImg infinite 8s;
   background-image: url(..\img\20220525_183430.jpg);
   height: 87vh;
 }
