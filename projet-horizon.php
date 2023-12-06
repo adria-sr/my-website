@@ -41,7 +41,7 @@
     </div>
       </div>
     <div class="row g-0">
-      <div class="col-lg">
+      <div class="col-lg-4">
       </div>
       <div class="col-lg mb-4">
         <img class="img-fluid" src="img\horizon-1.jpg" alt="">
