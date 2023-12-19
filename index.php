@@ -220,29 +220,17 @@
   <div class="container-fluid p-4">
     <div class="row">
       <div class="col-lg-4 mb-4">
+        <h1>À propos</h1>
         <h2>
-
           Au croisement entre l'architecture, l'urbanisme et le design graphique, je cultive un lien de proximité avec le terrain, le territoire, l'espace. J'imagine des dispositifs visuels, éditions imprimées, cartographies et photographies qui
           permettent au plus grand nombre d'agir efficacement sur ce qui nous entoure mais aussi de faire un pas de côté vis à vis de nos expériences quotidiennes de l'espace urbain.<br><br>
 
           Diplômé d'un DN MADe graphisme en 2023, je poursuis un master en design graphique à l'isdaT à Toulouse.<br><br>
-
         </h2>
-      </div>
-      <div class="col-md-6">
-        <ul>
-          <li> <a href="https://instagram.com/adria_sr"><i class="bi bi-instagram"></i> <i>Instagram</i></a></li>
-          <li> <a href="https://www.linkedin.com/in/adria-soubias/"><i class="bi bi-linkedin"></i> <i>Linkedin</i></a></li>
-
-          <li> <a href="https://instagram.com/adria_sr"><i class="bi bi-envelope-at"></i> <i>adria.soubias[arobase]orange[point]fr</i></a></li>
-
-        </ul>
-      </div>
-      <div class="col">
-
-
-
-
+        <h1>Contact</h1>
+        <p><a href="https://instagram.com/adria_sr" target="_blank"><i class="bi bi-instagram"></i> <i>Instagram</i></a>
+          <br> <a href="https://www.linkedin.com/in/adria-soubias/" target="_blank"><i class="bi bi-linkedin"></i> <i>Linkedin</i></a>
+          <br> adria.soubias[arobase]orange[point]fr</p>
       </div>
     </div>
   </div>
