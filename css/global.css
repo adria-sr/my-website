@@ -196,6 +196,8 @@ a:hover {
   margin-bottom: 1vh;
 }
 
+.disparition {}
+
 @media screen and (max-width: 550px) {
   .projet {
     background-color: var(--tonique);
@@ -205,6 +207,7 @@ a:hover {
   #projet {
     padding: 0;
   }
+
 }
 
 @media screen and (min-width: 551px) {
@@ -217,6 +220,8 @@ a:hover {
   .projet {
     background-color: white;
   }
+  }
+
 }
 
 .navbar {
