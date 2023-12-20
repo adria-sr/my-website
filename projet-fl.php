@@ -11,7 +11,7 @@
 </div>
 </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 order-1">
 
         <h2>
   Un écosystème graphique peut se définir comme "les outils et les règles graphiques qui garantissent la composition cohérente et ordonnée du nouveau paysage" mais il est aussi une "base ouverte qui se prête à être complétée et enrichie avec de nouvelles séries et développements graphiques." (Leku Studio). La notion d'écosystème induit aussi des interactions, des échanges et s'oppose au un kit graphique en s'inscrivant dans un contexte précis, un réalité tangible qui, dans ce cas, est la place Fontaine Lestang.<br><br>
@@ -21,7 +21,7 @@
   Au fur et à mesure de l'avancement du projet, les supports de communication se teintent de la participation des habitants : l'identité visuelle "rubalise", avec les formes de sa grille et sa tonique orange est déconstruite et réappropriée par les participants qui jouissent d'une liberté totale dans l'utilisation des formes proposées dans le deuxième atelier.
         </h2>
       </div>
-      <div class="col-lg">
+      <div class="col-lg order-lg-1">
     <figure>
       <img class="img-fluid" src="img\fl-affiche.jpg" alt="">
 <figcaption class="mt- text-end">Affiche d'avant projet annonçant le début de la consultation <i>in situ</i>.</figcaption>
@@ -35,7 +35,7 @@
   <div class="row g-0">
     <div class="col-lg-4">
     </div>
-    <div class="col-lg mb-4">
+    <div class="col-lg mb-4 ">
       <figure>
         <img class="img-fluid" src="img\fl-drapeau.jpg" alt="Drapeau vertical orange signalant le projet sur la place">
 
@@ -88,6 +88,6 @@
   </div>
 </div>
 
-
+<?php echo file_get_contents("liste-projets.html")?>
 
   <?php echo file_get_contents("footer.html"); ?>
