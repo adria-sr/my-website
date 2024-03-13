@@ -17,7 +17,7 @@
 
 
 <div class="container-fluid p-4" id="projets">
-
+<?php echo file_get_contents("liste-projets.html"); ?>
 
   <div class="container-fluid p-4 position-relative projet">
     <div class="row">
